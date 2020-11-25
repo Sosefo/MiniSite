@@ -7,6 +7,7 @@ import { JeuxComponent } from './jeux/jeux.component';
 import { ConsolesComponent } from './consoles/consoles.component';
 import { RessourcesComponent } from './ressources/ressources.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
