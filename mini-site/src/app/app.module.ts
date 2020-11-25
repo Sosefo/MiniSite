@@ -10,6 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
 import { PlanDuSiteComponent } from './plan-du-site/plan-du-site.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatButtonModule} from '@angular/material/button';
+
+
 
 @NgModule({
   declarations: [
@@ -24,6 +28,8 @@ import { PlanDuSiteComponent } from './plan-du-site/plan-du-site.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatStepperModule,
+    MatButtonModule,
     AppRoutingModule
   ],
   providers: [],

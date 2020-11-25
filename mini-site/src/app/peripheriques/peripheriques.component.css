@@ -1,0 +1,14 @@
+ul{
+  position : absolute;
+  left:0;
+  list-style-type: none;
+}
+
+nav{
+  width: 24%;
+}
+
+.nav-button{
+  height: 100px;
+  width: 200px;
+}

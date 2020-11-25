@@ -218,6 +218,7 @@ footer {
 }
 
 footer a {
+  color: #fff;
   display: flex;
   align-items: center;
 }
