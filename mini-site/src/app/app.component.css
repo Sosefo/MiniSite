@@ -80,6 +80,7 @@ p {
   max-width: 960px;
   flex-direction: column;
   align-items: center;
+  height: 70%;
 }
 
 
@@ -209,6 +210,7 @@ a:hover {
 }
 
 footer {
+  background-color: #5d6a7e80;
   margin-top: 8px;
   display: flex;
   align-items: center;
