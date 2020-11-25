@@ -1,6 +1,8 @@
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {MatDividerModule} from '@angular/material/divider';
 import { AppComponent } from './app.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { JeuxComponent } from './jeux/jeux.component';
@@ -28,9 +30,12 @@ import {MatButtonModule} from '@angular/material/button';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatDividerModule,
     MatStepperModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSidenavModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

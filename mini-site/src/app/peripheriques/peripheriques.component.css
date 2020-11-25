@@ -10,6 +10,7 @@ section {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 nav {
@@ -19,6 +20,13 @@ nav {
 }
 
 .nav-content {
+}
+
+.mat-divider{
+  width: 80%;
+  border-color : rgba(110, 110, 110, 0.747);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-button{

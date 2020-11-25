@@ -45,7 +45,29 @@ p {
   font-weight: 600;
 }
 
+ul{
+  text-align: center;
+  list-style: none;
+  font-size: 0.88rem;
+}
 
+.menu-item:after{
+  content : '|';
+  color: white;
+  margin : 0px 6px;
+}
+
+.footer-bottom{
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-bottom ul li {
+  display: inline-block;
+}
+
+li a {
+  display: inline;
+}
 .toolbar .flex {
   flex: 1 1 auto;
 }
@@ -215,7 +237,6 @@ footer {
 
 footer a {
   color: #fff;
-  display: flex;
   align-items: center;
 }
 
