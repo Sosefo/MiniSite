@@ -8,6 +8,7 @@ import { ConsolesComponent } from './consoles/consoles.component';
 import { RessourcesComponent } from './ressources/ressources.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AcceuilComponent,
     JeuxComponent,
     ConsolesComponent,
-    RessourcesComponent
+    RessourcesComponent,
+    PeripheriquesComponent
   ],
   imports: [
     BrowserModule,
