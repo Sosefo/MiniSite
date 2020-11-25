@@ -1,3 +1,4 @@
+import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
 import { RessourcesComponent } from './ressources/ressources.component';
 import { ConsolesComponent } from './consoles/consoles.component';
 import { JeuxComponent } from './jeux/jeux.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   {path : 'jeux', component: JeuxComponent},
   {path : 'consoles', component: ConsolesComponent},
+  {path : 'peripheriques', component: PeripheriquesComponent},
   {path : 'recommandations', component: RessourcesComponent},
 
 ];
