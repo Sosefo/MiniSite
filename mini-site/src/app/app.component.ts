@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mini-site';
+  title = 'Accessibilité des jeux video dans la vie quotidienne';
 }

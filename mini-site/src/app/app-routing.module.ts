@@ -1,3 +1,6 @@
+import { RessourcesComponent } from './ressources/ressources.component';
+import { ConsolesComponent } from './consoles/consoles.component';
+import { JeuxComponent } from './jeux/jeux.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -5,6 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path : 'jeux', component: JeuxComponent},
+  {path : 'consoles', component: ConsolesComponent},
+  {path : 'recommandations', component: RessourcesComponent},
+
 ];
 
 @NgModule({
