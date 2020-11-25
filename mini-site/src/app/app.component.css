@@ -20,12 +20,20 @@ p {
   margin: 0;
 }
 
+.evitement {
+  position: absolute;
+  left: -99999px;
+}
+
+.evitement:focus {
+  position: static;
+}
+
 .spacer {
   flex: 1;
 }
 
 .toolbar {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
