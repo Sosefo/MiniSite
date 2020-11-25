@@ -9,6 +9,7 @@ import { RessourcesComponent } from './ressources/ressources.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
+import { PlanDuSiteComponent } from './plan-du-site/plan-du-site.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PeripheriquesComponent } from './peripheriques/peripheriques.component'
     JeuxComponent,
     ConsolesComponent,
     RessourcesComponent,
-    PeripheriquesComponent
+    PeripheriquesComponent,
+    PlanDuSiteComponent
   ],
   imports: [
     BrowserModule,
