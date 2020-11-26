@@ -8,20 +8,6 @@ section {
   height: 100%;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav {
-  height: 100%;
-  float: left;
-  background: #333333;
-}
-
-.nav-content {
-}
-
 .mat-divider{
   width: 80%;
   border-color : rgba(110, 110, 110, 0.747);
