@@ -1,5 +1,5 @@
 import { MatSidenavModule } from '@angular/material/sidenav';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
@@ -31,6 +31,7 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     BrowserAnimationsModule,
     MatDividerModule,
+    CarouselModule.forRoot(),
     MatStepperModule,
     MatButtonModule,
     AppRoutingModule,

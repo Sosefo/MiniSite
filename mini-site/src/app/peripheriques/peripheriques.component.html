@@ -23,28 +23,45 @@
   <div class="peripherique">
     <h1>Manette Ps4 pour un usage à une seule main (gauche)</h1>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+      <ol class="carousel-indicators" role="tablist">
+        <li role="tab" tabindex="0" aria-selected="true" aria-controls="panneau-1" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li role="tab" tabindex="-1" aria-selected="false" aria-controls="panneau-2" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" role="tabpanel" id="panneau-1" aria-hidden="false" aria-roledescription="slide"
+        aria-label="1 of 2">
           <img class="d-block w-100" src="../../assets/manette_hitclic1.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" role="tabpanel" id="panneau-2" aria-hidden="true" aria-roledescription="slide"
+        aria-label="2 of 2">
           <img class="d-block w-100" src="../../assets/manette_hitclic2.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" alt="Panneau précédant">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Précédent</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" alt="Panneau suivant">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Suivant</span>
       </a>
-    </div>
+    </div>-->
+
+
+    <carousel id="peripheriquesSlide"[interval]="false"   [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+      <slide role="tabpanel" id="panneau-1" aria-hidden="false" aria-roledescription="slide">
+        <img class="d-block w-100" src="../../assets/manette_hitclic1.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
+      </slide>
+      <slide role="tabpanel" id="panneau-2" aria-hidden="true" aria-roledescription="slide">
+        <img class="d-block w-100" src="../../assets/manette_hitclic2.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus" />
+      </slide>
+
+      <ol class="carousel-indicators" role="tablist">
+        <li role="tab" tabindex="activeSlide === 0 ? 0 : -1" aria-selected="activeSlide === 0" aria-controls="panneau-1"  (click)="nextSlide()" [class.active]="activeSlide === 0"></li>
+        <li role="tab" tabindex="activeSlide === 1 ? 0 : -1" aria-selected="activeSlide === 1" aria-controls="panneau-2" (click)="nextSlide()" [class.active]="activeSlide === 1"></li>
+      </ol>
+    </carousel>
 
 
     <div class="peripherique-content">

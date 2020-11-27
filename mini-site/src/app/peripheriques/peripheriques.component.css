@@ -30,15 +30,23 @@
 }
 
 .nav-button:focus{
-  border : none;
+  outline : none;
 }
 
-.carousel{
-  width: 350px;
-  margin : 40px auto 40px auto;
+ul{
+  list-style: none;
+  padding : 0;
 }
 
-.carousel-control-next-icon , .carousel-control-prev-icon{
+.peripherique-properties ul li {
+  margin-top:20px;
+}
+
+::ng-deep .slide{
+  width: 30% !important;
+}
+
+::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
 
   background-color: black;
 }
