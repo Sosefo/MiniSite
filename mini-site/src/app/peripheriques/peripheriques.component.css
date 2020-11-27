@@ -49,3 +49,24 @@ nav {
   width: 200px;
   color: white;
 }
+
+.nav-button:focus{
+  border : none;
+}
+
+.carousel{
+  width: 350px;
+  margin : 40px auto 40px auto;
+}
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+
+  background-color: black;
+}
+
+
+
+
+
+
+
