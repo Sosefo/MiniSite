@@ -48,8 +48,7 @@
       </a>
     </div>-->
 
-
-    <carousel id="peripheriquesSlide"[interval]="false"   [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+    <carousel id="peripheriquesSlide" [interval]="false" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
       <slide role="tabpanel" id="panneau-1" aria-hidden="false" aria-roledescription="slide">
         <img class="d-block w-100" src="../../assets/manette_hitclic1.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
       </slide>
@@ -62,7 +61,6 @@
         <li role="tab" tabindex="activeSlide === 1 ? 0 : -1" aria-selected="activeSlide === 1" aria-controls="panneau-2" (click)="nextSlide()" [class.active]="activeSlide === 1"></li>
       </ol>
     </carousel>
-
 
     <div class="peripherique-content">
         <p>La société HitClic créée en 2019 par David Combarieu et Théo Jordan,

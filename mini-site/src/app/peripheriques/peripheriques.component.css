@@ -52,6 +52,16 @@ ul{
 }
 
 
+::ng-deep carousel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+::ng-deep carousel > div {
+  margin: auto;
+}
+
+
 
 
 
