@@ -4,9 +4,18 @@ section {
 }
 
 :host {
+  display: flex;
   width: 100%;
   height: 100%;
 }
+
+.content {
+  height: 100%;
+}
+
+.sous-navigation {
+   float: none;
+ }
 
 .mat-divider{
   width: 80%;
@@ -19,4 +28,8 @@ section {
   height: 100px;
   width: 200px;
   color: white;
+}
+
+.consoles {
+  margin-left: 20px;
 }
