@@ -1,3 +1,4 @@
+import { AvisComponent } from './avis/avis.component';
 import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
 import { RessourcesComponent } from './ressources/ressources.component';
 import { ConsolesComponent } from './consoles/consoles.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path : 'consoles', component: ConsolesComponent},
   {path : 'peripheriques', component: PeripheriquesComponent},
   {path : 'recommandations', component: RessourcesComponent},
+  {path : 'avis', component: AvisComponent},
 
 ];
 

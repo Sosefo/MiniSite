@@ -6,16 +6,14 @@ import * as $ from 'jquery';
   templateUrl: './peripheriques.component.html',
   styleUrls: ['./peripheriques.component.css']
 })
-export class PeripheriquesComponent implements OnInit,AfterViewInit{
+export class PeripheriquesComponent implements OnInit{
 
 
   constructor() {
   }
 
-  activeSlide;
-  ngAfterViewInit(): void {
+  activeSlide = 0;
 
-  }
   ngOnInit(): void {
 
   }

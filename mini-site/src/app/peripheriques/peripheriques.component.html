@@ -48,12 +48,12 @@
       </a>
     </div>-->
 
-    <carousel id="peripheriquesSlide" [interval]="false" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
-      <slide role="tabpanel" id="panneau-1" aria-hidden="false" aria-roledescription="slide">
+    <carousel id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+      <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
         <img class="d-block w-100" src="../../assets/manette_hitclic1.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
       </slide>
-      <slide role="tabpanel" id="panneau-2" aria-hidden="true" aria-roledescription="slide">
-        <img class="d-block w-100" src="../../assets/manette_hitclic2.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus" />
+      <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 2">
+        <img class="d-block w-100" src="../../assets/manette_hitclic2.PNG" alt="Manette Ps4 pour un usage à une main vue du dessous" />
       </slide>
 
       <ol class="carousel-indicators" role="tablist">
@@ -65,17 +65,26 @@
     <div class="peripherique-content">
         <p>La société HitClic créée en 2019 par David Combarieu et Théo Jordan,
           développe des solutions sur mesure à l’utilisation des différents périphériques de jeu
-          pour les personnes à mobilité réduite.</p>
+          pour les personnes à mobilité réduite. L'objectif principale de la société
+          est de soutenir les activités de l'association en apportant une contribution matérielle.
+        </p>
+        <p>
+          Parmi les périphériques déjà developpés par l'entreprise, on
+          y trouve une adaptation d'une manette PS4 pour un usage exclusif à une seule main ( ici main gauche )
+
+          Voici les adapaptations par rapport à une manette de PS4 classique :
+        </p>
 
           <div class="peripherique-properties">
             <ul>
-              <li> 4 boutons de jeu reportés sous la poignée gauche </li>
-              <li> boutons R1 R2 reportés sur le dessus </li>
-              <li> Joystick droit reporté sous la manette pour usage en appui sur le genou </li>
+              <li> Les 4 boutons de jeu sont reportés sous la poignée gauche </li>
+              <li> Les boutons R1 et R2 sont reportés sur le dessus </li>
+              <li> Le joystick droit est reporté sous la manette pour l'utiliser à l'aide d'appui sur le genou</li>
             </ul>
           </div>
     </div>
   </div>
+</section>
 
 
 

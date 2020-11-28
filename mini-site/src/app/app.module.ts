@@ -14,6 +14,7 @@ import { PeripheriquesComponent } from './peripheriques/peripheriques.component'
 import { PlanDuSiteComponent } from './plan-du-site/plan-du-site.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
+import { AvisComponent } from './avis/avis.component';
 
 
 
@@ -25,8 +26,9 @@ import {MatButtonModule} from '@angular/material/button';
     ConsolesComponent,
     RessourcesComponent,
     PeripheriquesComponent,
-    PlanDuSiteComponent
-  ],
+    PlanDuSiteComponent,
+    AvisComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

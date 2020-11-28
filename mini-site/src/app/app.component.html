@@ -2,36 +2,50 @@
 <a  class="evitement" href="#contenu">Aller au contenu</a>
 
 <!-- Toolbar -->
-<header class="toolbar" role="banner">
-  <img
+<header role="banner" >
+  <nav class="toolbar navbar navbar-dark navbar-expand-lg ">
+    <img
     width="40"
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  />
-  <span>{{title}}</span>
-    <div class="spacer"></div>
+    />
+    <span>{{title}}</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent" >
+      <span>
+        <a class="nav-link" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
+          Jeux
+        </a>
+      </span>
+      <span>
+        <a class="nav-link" aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
+          Consoles
+        </a>
+      </span>
+      <span >
+        <a class="nav-link" aria-label="Accessibilité des périphériques de jeux" routerLink="/peripheriques">
+          Périphériques
+        </a>
+      </span>
+      <span>
+        <a class="nav-link" aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
+          Recommandations
+        </a>
+      </span>
+      <span>
+        <a class="nav-link" routerLink="/avis">
+          Donnez nous votre avis !
+        </a>
+      </span>
+    </div>
+  </nav>
 
 
-    <span>
-      <a aria-label="Accessibilité dans les jeux" routerLink="/jeux">
-        Jeux
-      </a>
-    </span>
-    <span>
-      <a aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
-        Consoles
-      </a>
-    </span>
-    <span>
-      <a aria-label="Accessibilité des périphériques de jeux" routerLink="/peripheriques">
-        Périphériques
-      </a>
-    </span>
-    <span>
-      <a aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
-        Recommandations
-      </a>
-    </span>
+
 </header>
 
 <main class="content" role="main">
@@ -40,7 +54,6 @@
 </main>
 
 <footer role="contentinfo">
-
   <div class="footer-bottom">
     <ul>
       <li><a routerLink="/plan" class="menu-item">Plan du site</a> </li>
