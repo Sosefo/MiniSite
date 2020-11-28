@@ -1,64 +1,53 @@
-<div class="card border w-75 align-self-center" style="width: 18rem;">
+<div #formCard class="card border" >
   <div class="card-header">Votre avis compte !</div>
   <div class="card-body">
 
-    <form>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        </div>
-      </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                First radio
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-                Second radio
-              </label>
-            </div>
-            <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-              <label class="form-check-label" for="gridRadios3">
-                Third disabled radio
-              </label>
-            </div>
-          </div>
-        </div>
-      </fieldset>
-      <div class="form-group row">
-        <div class="col-sm-2">Checkbox</div>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">
-              Example checkbox
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
+    <form novalidate #f="ngForm">
+        <label id="design" class="col-sm-8 champ-title">Note du desgin du site (entre 0 et 5) *</label>
+        <mat-radio-group
+          aria-describedby="design-error"
+          aria-labelledby="design"
+          aria-required="true"
+          [attr.aria-invalid]="design == undefined"
+          required
+          name="design"
+          #design="ngModel"
+          class="radio"
+          [(ngModel)]="designNote">
+          <mat-radio-button *ngFor="let value of values" [id]="value"  [value]="value" [tabindex]="value">
+            <label class="label" [for]="value">{{value}}</label>
+          </mat-radio-button>
+        </mat-radio-group>
+        <p *ngIf="designNote == undefined" [class.errors]="accessibilityNote == undefined" id="design-error">Veuillez renseigner une note pour le design du site</p>
+
+        <label id="accessibilité" class="col-sm-8 champ-title">Note de l'accessibilité du site (entre 0 et 5) *</label>
+        <mat-radio-group
+          aria-describedby="accessibility-error"
+          aria-labelledby="accessibilité"
+          aria-required="true"
+          [attr.aria-invalid]="accessibility == undefined"
+          required
+          #accessibility="ngModel"
+          name="accessibility"
+          class="radio"
+          [(ngModel)]="accessibilityNote">
+          <mat-radio-button [id]="value+6" *ngFor="let value of values" [value]="value">
+            <label class="label" [for]="value+6">{{value}}</label>
+          </mat-radio-button>
+        </mat-radio-group>
+
+        <p *ngIf="accessibilityNote == undefined" [class.errors]="accessibilityNote == undefined" id="accessibility-error">Veuillez renseigner une note pour l'accessibilité du site</p>
+
+      <div class="submit form-group">
+        <button type="submit" class="btn btn-primary" [disabled]="designNote == undefined || accessibilityNote==undefined" (click)="send()">Envoyer votre avis</button>
       </div>
     </form>
 
-
-
   </div>
+</div>
+
+
+<div #confirmationMessage class="confirmation-message" [hidden]=true>
+  <span class="row message-text">Merci votre opinion nous est d'une grande aide !</span>
+  <a class="row confirm-button" mat-raised-button routerLink="/" >Revenir à la page d'acceuil</a>
 </div>

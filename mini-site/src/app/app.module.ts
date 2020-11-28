@@ -16,6 +16,8 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import { AvisComponent } from './avis/avis.component';
 
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { AvisComponent } from './avis/avis.component';
     CarouselModule.forRoot(),
     MatStepperModule,
     MatButtonModule,
+    FormsModule,
+    MatRadioModule,
     AppRoutingModule,
     MatSidenavModule,
 
