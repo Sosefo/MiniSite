@@ -13,10 +13,6 @@ section {
   height: 100%;
 }
 
-.sous-navigation {
-   float: none;
- }
-
 .mat-divider{
   width: 80%;
   border-color : rgba(110, 110, 110, 0.747);

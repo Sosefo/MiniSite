@@ -5,7 +5,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .sous-navigation {
   height: 100%;
-  float: left;
   background: #333333;
 }
 
