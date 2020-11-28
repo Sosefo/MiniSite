@@ -1,9 +1,9 @@
 <!-- Lien d evitement -->
-<a  class="evitement" href="#contenu">Aller au contenu</a>
+<a  class="evitement" href="javascript:void(0);" (click)='skipToMainContent()'>Aller au contenu</a>
 
 <!-- Toolbar -->
 <header role="banner" >
-  <nav class="toolbar navbar navbar-dark navbar-expand-lg ">
+  <nav role="navigation" arial-label="Menu de navigation" class="toolbar navbar navbar-dark navbar-expand-lg">
     <img
     width="40"
     alt="Angular Logo"
@@ -15,7 +15,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <span>
         <a class="nav-link" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
           Jeux
@@ -49,7 +49,7 @@
 </header>
 
 <main class="content" role="main">
-  <a id="contenu" tabindex="-1"></a>
+  <a id="contenu" aria-hidden="true" #content tabindex="-1"></a>
 <router-outlet></router-outlet>
 </main>
 

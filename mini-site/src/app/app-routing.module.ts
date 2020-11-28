@@ -5,7 +5,7 @@ import { ConsolesComponent } from './consoles/consoles.component';
 import { JeuxComponent } from './jeux/jeux.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
