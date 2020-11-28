@@ -1,15 +1,15 @@
-<nav class="sous-navigation" role="navigation" arial-label="Periphériques filtres">
+<nav class="sous-navigation" role="navigation" aria-label="Periphériques filtres">
 
   <div class="nav-content">
     <ul>
       <li>
         <button mat-button class="nav-button">Peripherique 1</button>
       </li>
-      <mat-divider></mat-divider>
+      <mat-divider aria-hidden="true"></mat-divider>
       <li>
         <button mat-button class="nav-button">Peripherique 2</button>
       </li>
-      <mat-divider></mat-divider>
+      <mat-divider aria-hidden="true"></mat-divider>
       <li>
         <button mat-button class="nav-button">Peripherique 3</button>
       </li>
@@ -57,11 +57,13 @@
         </slide>
       </carousel>
 
-        <ol class="carousel-indicators" role="tablist">
-          <li role="tab" tabindex="activeSlide === 0 ? 0 : -1" aria-selected="activeSlide === 0" aria-controls="panneau-1"  (click)="nextSlide()" [class.active]="activeSlide === 0"></li>
-          <li role="tab" tabindex="activeSlide === 1 ? 0 : -1" aria-selected="activeSlide === 1" aria-controls="panneau-2" (click)="nextSlide()" [class.active]="activeSlide === 1"></li>
-        </ol>
+      <ol class="carousel-indicators" role="tablist">
+        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="nextSlide()" [class.active]="activeSlide === 0"></li>
+        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="nextSlide()" [class.active]="activeSlide === 1"></li>
+      </ol>
     </div>
+
+
 
     <div class="main-text-content">
         <p>La société HitClic créée en 2019 par David Combarieu et Théo Jordan,
