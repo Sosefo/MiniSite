@@ -29,3 +29,49 @@ section {
 .consoles {
   margin-left: 20px;
 }
+
+
+
+::ng-deep .slide{
+  display: flex;
+  width: 60% !important;
+}
+
+::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
+
+  background-color: #8b0ead;
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-indicators {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 25px;
+}
+
+::ng-deep .carousel-control-prev{
+  order: 0;
+  position: initial;
+}
+::ng-deep .carousel-control-next{
+  order: 2;
+  position: initial;
+}
+
+.carousel-indicators li{
+  height: 4px;
+  background-color: #8b0ead;
+}
+
+::ng-deep .carousel {
+  margin-top: 25px;
+}
+
+::ng-deep .carousel-inner {
+  order: 1;
+}
+
+::ng-deep carousel > div {
+  margin: auto;
+}

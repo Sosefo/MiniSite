@@ -19,7 +19,7 @@ export class PeripheriquesComponent implements OnInit{
   }
 
   nextSlide(): void{
-    if(this.activeSlide === 1){
+    if (this.activeSlide === 1){
       this.activeSlide = 0;
     }
     else{

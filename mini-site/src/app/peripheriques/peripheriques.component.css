@@ -9,19 +9,8 @@
   height: 100%;
 }
 
-.peripherique-properties{
-  width: 40%;
-  border-left : 3px solid #a338c4;
-  margin : 40px auto auto auto;
-  padding-left: 20px;
-}
-
 .peripherique{
   margin-left:20px;
-}
-
-.peripherique-content{
-  font-size: 1rem;
 }
 
 .nav-button{
@@ -36,15 +25,6 @@ img{
 }
 .nav-button:focus{
   outline : none;
-}
-
-ul{
-  list-style: none;
-  padding : 0;
-}
-
-.peripherique-properties ul li {
-  margin-top:20px;
 }
 
 ::ng-deep .slide{
@@ -68,6 +48,12 @@ ul{
   position: initial;
 }
 
+.carousel-indicators {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 25px;
+}
+
 .carousel-indicators li{
   height: 4px;
   background-color: #8b0ead;
@@ -75,7 +61,6 @@ ul{
 
 ::ng-deep .carousel {
   margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 ::ng-deep .carousel-inner {
