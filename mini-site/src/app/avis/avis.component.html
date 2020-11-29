@@ -1,7 +1,7 @@
 <div #formCard class="card border" >
   <div class="card-header">Votre avis compte !</div>
   <div class="card-body">
-
+    <p class="font-italic text-center">Les champs suivi d'une * sont obligatoires</p>
     <form novalidate #f="ngForm">
         <label id="design" class="col-sm-8 champ-title">Note du desgin du site (entre 0 et 5) *</label>
         <mat-radio-group
@@ -13,12 +13,13 @@
           name="design"
           #design="ngModel"
           class="radio"
-          [(ngModel)]="designNote">
+          [(ngModel)]="designNote"
+          (ngModelChange)="designUpdate()">
           <mat-radio-button *ngFor="let value of values" [id]="value"  [value]="value" [tabindex]="value">
             <label class="label" [for]="value">{{value}}</label>
           </mat-radio-button>
         </mat-radio-group>
-        <p *ngIf="designNote == undefined" [class.errors]="accessibilityNote == undefined" id="design-error">Veuillez renseigner une note pour le design du site</p>
+        <p *ngIf="designNoteError" [class.errors]="accessibilityNote == undefined" id="design-error">Veuillez renseigner une note pour le design du site</p>
 
         <label id="accessibilité" class="col-sm-8 champ-title">Note de l'accessibilité du site (entre 0 et 5) *</label>
         <mat-radio-group
@@ -30,16 +31,17 @@
           #accessibility="ngModel"
           name="accessibility"
           class="radio"
-          [(ngModel)]="accessibilityNote">
+          [(ngModel)]="accessibilityNote"
+          (ngModelChange)="accessibilityUpdate()">
           <mat-radio-button [id]="value+6" *ngFor="let value of values" [value]="value">
             <label class="label" [for]="value+6">{{value}}</label>
           </mat-radio-button>
         </mat-radio-group>
 
-        <p *ngIf="accessibilityNote == undefined" [class.errors]="accessibilityNote == undefined" id="accessibility-error">Veuillez renseigner une note pour l'accessibilité du site</p>
+        <p *ngIf="accessibilityNoteError" [class.errors]="accessibilityNote == undefined" id="accessibility-error">Veuillez renseigner une note pour l'accessibilité du site</p>
 
       <div class="submit form-group">
-        <button type="submit" class="btn btn-primary" [disabled]="designNote == undefined || accessibilityNote==undefined" (click)="send()">Envoyer votre avis</button>
+        <button type="submit" class="avis-button btn" (click)="send()">Envoyer votre avis</button>
       </div>
     </form>
 

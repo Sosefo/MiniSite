@@ -62,3 +62,13 @@ form{
 .confirm-button{
   font-size: 1.1rem;
 }
+
+.avis-button {
+  color: #fff;
+  background-color: #8b0ead;
+  border-color: #8b0ead;
+}
+
+.avis-button:focus {
+  box-shadow: 0 0 0 0.2rem #8b0eada3
+}

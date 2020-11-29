@@ -10,24 +10,42 @@ export class AvisComponent implements OnInit {
 
   designNote: number;
   accessibilityNote: number;
-  values = [0,1,2,3,4,5];
+  designNoteError: boolean;
+  accessibilityNoteError: boolean;
+  values = [0, 1, 2, 3, 4, 5];
 
   @ViewChild('confirmationMessage')
   confirmationMessage: ElementRef;
 
   @ViewChild('formCard')
   formCard: ElementRef;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.designNoteError = false;
+    this.accessibilityNoteError = false;
+  }
+
+  designUpdate(): void {
+    this.designNoteError = (this.designNote === undefined);
+  }
+
+  accessibilityUpdate(): void {
+    this.accessibilityNoteError = (this.accessibilityNote === undefined);
   }
 
   send(): void{
-    this.formCard.nativeElement.hidden = true;
-    this.formCard.nativeElement.setAttribute('aria-hidden', 'true');
+    this.designNoteError = (this.designNote === undefined);
+    this.accessibilityNoteError = (this.accessibilityNote === undefined);
+    if (!this.designNoteError && !this.accessibilityNoteError) {
+      this.formCard.nativeElement.hidden = true;
+      this.formCard.nativeElement.setAttribute('aria-hidden', 'true');
 
-    this.confirmationMessage.nativeElement.hidden = false;
-    this.confirmationMessage.nativeElement.setAttribute('aria-hidden', 'false');
+      this.confirmationMessage.nativeElement.hidden = false;
+      this.confirmationMessage.nativeElement.setAttribute('aria-hidden', 'false');
+    }
   }
 
 }
