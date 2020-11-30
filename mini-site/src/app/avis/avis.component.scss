@@ -4,6 +4,30 @@
   height: 100%;
 }
 
+@media all and (max-width: 475px) {
+  #confirmation-message {
+    margin: auto 30px !important;
+  }
+}
+
+@media all and (max-width: 595px) {
+   #avisCard {
+     margin: 15px;
+   }
+
+  .mobile-line-break {
+    display: block !important;
+  }
+}
+
+#accessibilite {
+  margin-top: 10px;
+}
+
+.mobile-line-break {
+  display: none;
+}
+
 .radio{
   margin-top:10px;
   display: inline-block;
@@ -54,7 +78,7 @@ form{
   margin-bottom: 40px;
 }
 
-.confirmation-message{
+#confirmation-message{
   margin: auto auto auto auto;
   text-align: center;
 }

@@ -1,9 +1,9 @@
-<div #formCard class="card border" >
+<div id="avisCard" #formCard class="card border" >
   <div class="card-header">Votre avis compte !</div>
   <div class="card-body">
     <p class="font-italic text-center">Les champs suivi d'une * sont obligatoires</p>
     <form novalidate #f="ngForm">
-        <label id="design" class="col-sm-8 champ-title">Note du desgin du site (entre 0 et 5) *</label>
+        <label id="design" class="col-sm-8 champ-title">Note du desgin du site <br class="mobile-line-break"/>(entre 0 et 5) *</label>
         <mat-radio-group
           aria-describedby="design-error"
           aria-labelledby="design"
@@ -21,7 +21,7 @@
         </mat-radio-group>
         <p *ngIf="designNoteError" [class.errors]="accessibilityNote == undefined" id="design-error">Veuillez renseigner une note pour le design du site</p>
 
-        <label id="accessibilité" class="col-sm-8 champ-title">Note de l'accessibilité du site (entre 0 et 5) *</label>
+        <label id="accessibilite" class="col-sm-8 champ-title">Note de l'accessibilité du site <br class="mobile-line-break"/>(entre 0 et 5) *</label>
         <mat-radio-group
           aria-describedby="accessibility-error"
           aria-labelledby="accessibilité"
@@ -49,7 +49,7 @@
 </div>
 
 
-<div #confirmationMessage class="confirmation-message" [hidden]=true>
+<div #confirmationMessage id="confirmation-message" [hidden]=true>
   <span class="row message-text">Merci votre opinion nous est d'une grande aide !</span>
   <a class="row confirm-button" mat-raised-button routerLink="/" >Revenir à la page d'acceuil</a>
 </div>
