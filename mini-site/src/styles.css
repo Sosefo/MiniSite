@@ -5,6 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .sous-navigation {
   background: #333333;
+  width: 18%;
 }
 
 .nav-content > ul {
@@ -15,6 +16,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .nav-content > ul > li {
   padding: 15px 0;
+}
+
+.navigation-list{
+  text-align: center;
 }
 .mat-divider{
   width: 80%;
