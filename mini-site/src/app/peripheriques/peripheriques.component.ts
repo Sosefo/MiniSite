@@ -14,8 +14,15 @@ export class PeripheriquesComponent implements OnInit{
 
   activeSlide = 0;
 
+  activePeripherique = 1;
+
   ngOnInit(): void {
 
+  }
+
+  changeActivePeripherique(peripherique: number): void{
+    console.log(peripherique);
+    this.activePeripherique = peripherique;
   }
 
   nextSlide(): void{
