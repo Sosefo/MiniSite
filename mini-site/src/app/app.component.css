@@ -10,6 +10,47 @@
   height: 100%;
 }
 
+@media all and (max-width: 992px){
+  /* Header */
+  #logo {
+    margin-right: 0 !important;
+  }
+
+  #titre {
+    max-width: 60%;
+  }
+
+  #navbarSupportedContent {
+    margin-top: 18px;
+  }
+
+  #navbarSupportedContent hr {
+    display: block !important;
+    margin: 0;
+  }
+  /**/
+}
+
+@media all and (min-width: 992px) and (max-width: 1205px){
+  /* Header */
+  #titre {
+    max-width: 20%;
+  }
+
+  #navbarSupportedContent a {
+    margin-right: 0;
+  }
+  /**/
+}
+
+@media all and (max-width: 1205px){
+  /* Header */
+  #logo {
+    margin-left: 0 !important;
+  }
+  /**/
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +64,8 @@ p {
   margin: 0;
 }
 
+/* Lien d evitement*/
+
 .evitement {
   position: absolute;
   left: -99999px;
@@ -31,9 +74,15 @@ p {
 .evitement:focus {
   position: static;
 }
+/**/
 
+/* Header */
 header {
   flex: 0 1 auto;
+}
+
+#titre {
+  text-align: center;
 }
 
 .toolbar {
@@ -47,10 +96,37 @@ header {
   font-weight: 600;
 }
 
-ul{
-  text-align: center;
-  list-style: none;
-  font-size: 0.88rem;
+#navbarSupportedContent hr {
+  display: none;
+}
+/**/
+
+/* Main */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  flex: 1 1 auto;
+}
+/**/
+
+/* Footer */
+footer {
+  position: relative;
+  background-color: #5d6a7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  height: 46px;
+  z-index: 111;
+  flex: 0 1 46px;
+}
+
+footer a {
+  color: #fff;
+  align-items: center;
 }
 
 .menu-item:after{
@@ -65,10 +141,6 @@ ul{
 
 .footer-bottom ul li {
   display: inline-block;
-}
-
-li a {
-  display: inline;
 }
 
 .toolbar div {
@@ -94,17 +166,19 @@ li a {
 }
 
 
-.toolbar img {
+#logo {
   margin: 0 16px;
 }
+/**/
 
+ul{
+  text-align: center;
+  list-style: none;
+  font-size: 0.88rem;
+}
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
-  flex: 1 1 auto;
+li a {
+  display: inline;
 }
 
 a,
@@ -116,21 +190,4 @@ a:hover {
 
 a:hover {
   color: #125699;
-}
-
-footer {
-  position: relative;
-  background-color: #5d6a7e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 20px;
-  height: 46px;
-  z-index: 111;
-  flex: 0 1 46px;
-}
-
-footer a {
-  color: #fff;
-  align-items: center;
 }
