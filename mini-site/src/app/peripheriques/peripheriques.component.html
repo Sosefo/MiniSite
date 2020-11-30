@@ -3,19 +3,19 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <button mat-button class="nav-button" (click)="changeActivePeripherique(1);">Manette Ps4 pour un usage <br/> à une seule main</button>
+        <button mat-button class="nav-button" (click)="activePeripherique=1;">Manette Ps4 pour un usage <br/> à une seule main</button>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <button mat-button class="nav-button" (click)="changeActivePeripherique(2);">Xbox adaptive controller</button>
+        <button mat-button class="nav-button" (click)="activePeripherique=2;">Xbox adaptive controller</button>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <button mat-button class="nav-button" (click)="changeActivePeripherique(3);">Adaptive Gaming Kit</button>
+        <button mat-button class="nav-button" (click)="activePeripherique=3;">Adaptive Gaming Kit</button>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <button mat-button class="nav-button" (click)="changeActivePeripherique(4);">Handi Joystick</button>
+        <button mat-button class="nav-button" (click)="activePeripherique=4;">Handi Joystick</button>
       </li>
     </ul>
   </div>
@@ -24,7 +24,7 @@
 
 <section class="content">
 
-  <div class="peripherique" [hidden]="activePeripherique != 1">
+  <div class="peripherique" *ngIf="activePeripherique == 1">
     <h1>Manette Ps4 pour un usage à une seule main (gauche)</h1>
 
     <div>
@@ -68,7 +68,7 @@
 
 
 
-  <div class="peripherique" [hidden]="activePeripherique != 2">
+  <div class="peripherique" *ngIf="activePeripherique == 2">
     <h1>Xbox adaptive controller</h1>
 
     <div>
@@ -122,7 +122,7 @@
   </div>
 
 
-  <div class="peripherique" [hidden]="activePeripherique != 3">
+  <div class="peripherique" *ngIf="activePeripherique == 3">
     <h1>Adaptive Gaming Kit</h1>
 
     <div>
@@ -167,7 +167,7 @@
   </div>
 
 
-  <div class="peripherique" [hidden]="activePeripherique != 4">
+  <div class="peripherique" *ngIf="activePeripherique == 4">
     <h1>Handi Joystick</h1>
 
     <div>
