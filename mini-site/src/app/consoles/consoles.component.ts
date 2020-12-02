@@ -11,15 +11,8 @@ export class ConsolesComponent implements OnInit {
 
   activeSlide = 0;
 
-  ngOnInit(): void {
-  }
+  activeConsole = 1;
 
-  nextSlide(): void{
-    if (this.activeSlide === 2){
-      this.activeSlide = 0;
-    }
-    else{
-      this.activeSlide++;
-    }
+  ngOnInit(): void {
   }
 }

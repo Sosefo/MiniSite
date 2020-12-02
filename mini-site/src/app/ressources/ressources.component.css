@@ -4,6 +4,17 @@ a{
   border-radius: 15px;
   padding : 5px 20px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+@media all and (max-width: 1024px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+h1 {
+  margin-left: 20px;
 }
 
 a:hover{
@@ -11,20 +22,33 @@ a:hover{
   color : white;
 }
 
-.link-container{
-  text-align: center;
-}
-
 .card{
   display: inline-flex;
-  height: 50%;
   margin:0 20px 30px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  margin: 0 10px 1rem;
+}
+
+.link-container{
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
 }
 
 .content{
   margin-top: 50px;
   text-align: center;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
