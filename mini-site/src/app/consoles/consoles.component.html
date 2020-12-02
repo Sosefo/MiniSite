@@ -16,7 +16,7 @@
   <div class="consoles" *ngIf="activeConsole === 1">
     <h1>L'arrivée de l'accessibilité numérique dans les consoles</h1>
     <div>
-        <carousel id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+        <carousel id="consolesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
           <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
             <img class="d-block w-100" src="../../assets/accessibilite_ps4_1.PNG" alt="Plusieurs options d'accessibilité pour la PS4"/>
             <div class="carousel-caption d-none d-md-block">
@@ -84,7 +84,7 @@
   <div class="consoles" *ngIf="activeConsole === 2">
     <h1>L'évolution de l'accessibilité numérique dans les consoles next-gen</h1>
     <div>
-      <carousel class="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+      <carousel id="consolesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
         <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
           <img class="d-block w-100" src="../../assets/accessibilite_ps5.PNG" alt="Plusieurs options d'accessibilité pour la PS4"/>
           <div class="carousel-caption d-none d-md-block">
