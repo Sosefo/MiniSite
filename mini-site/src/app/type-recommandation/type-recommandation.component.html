@@ -1,0 +1,119 @@
+<section>
+  <nav role="navigation" aria-label="Fil d'Ariane">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/recommandations">Recommandations </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">{{typeRecommandation}}</li>
+    </ol>
+  </nav>
+</section>
+
+<div class="recommandation-content" *ngIf="typeRecommandation == 'Général'">
+
+    <h1>Offrir un large choix de difficultés de jeu</h1>
+
+    <p>
+      Permettre de modifier le niveau des IA, la vitesse des ennemis, la difficulté des enigmes,.. et eviter
+      de catégoriser les niveaux de difficultés inférieurs par des termes qui peuvent paraître rabaissant pour
+      l'utilsateur.
+      <br/>
+      Par exemple, le jeu Shadow of the Tomb Raider permet un choix de difficultés sur plusieurs
+      élément précis du gameplay.
+    </p>
+
+    <img src="../../assets/shadowOfTheTombRaider.png" alt="Interface de régagles de la difficulté du jeu Shadow of the Tomb Raider"/>
+
+    <mat-divider aria-hidden="true"></mat-divider>
+
+    <h1>Afficher les détails des fonctionnalités accessibles du jeu</h1>
+
+    <p>
+      N'étant pas encore un standard, certains joueurs n'ont pas connaissance des fonctionnalités d'accessibilité présent dans un jeu.
+      Il est donc nécéssaire de les informer sous forme de menu affiché avant le début du jeu ou bien d'informations lors des écrans de chargement par exemple.
+      <br/>
+      Le jeu Battlefield Harline a par exemple inclut dans l'écran de chargement une information concerant le mode daltonien
+    </p>
+
+    <img src="../../assets/hardlinetips.png" alt="Information sur le mode daltonien lors de l'écran de chargement dans le jeu Battlefield Harline"/>
+
+    <mat-divider aria-hidden="true"></mat-divider>
+
+    <h1>Permettre de sauvegarder les paramètres selon plusieurs profils </h1>
+
+    <p>
+     Plusieurs joueurs peuvent être amener à utiliser une console ou un jeu. Chaque joueur a ses propres besoins et préférences de réglages. Sauvegarder
+     plusieurs profils est nécessaire pour éviter de devoir modifier ces paramètres à chaque fois.
+      <br/>
+      Certains jeux comme World of Warcraft sauvegarde les préférences de jeu par profils et non par machine.
+    </p>
+
+    <img src="../../assets/world-of-warcraft-login.jpg" alt="Préférences de jeu sauvegardés par compte sur le jeu World of Warcraft"/>
+
+</div>
+
+
+<div class="recommandation-content" *ngIf="typeRecommandation == 'Moteur'">
+
+  <h1>Permettre de personnaliser l'interface</h1>
+
+  <p>
+
+  </p>
+
+  <mat-divider aria-hidden="true"></mat-divider>
+
+  <h1>Permettre de modifier la taille de l'interface</h1>
+
+  <p>
+    En plus des différences de taille d'écran possible, permettre de modifier la taille d'une interface est essentiel pour les personnes
+    ayant du mal à voir les petits éléments présents. De plus, certains joueurs préfère rétricir certains éléments pour laisser plus de place au gameplay.
+  <br/>
+  Par exemple, le jeu Street Fighter 5 propose de cacher certains éléments de l'interface de jeu ou de les déplacer.
+  </p>
+
+  <img src="../../assets/street-fighter-5.png" alt="Interface pour le régagle de la taille de l'interface dans le jeu street fighter 5"/>
+
+  <mat-divider aria-hidden="true"></mat-divider>
+
+  <h1>Permettre d'ajuster la vitesse du jeu</h1>
+
+  <p>
+    Pouvoir régler la vitesse de jeu est intéréssant pour les personnes agées souhaitant jouer au jeu ou lors de troubles de réactivités.
+    <br/>
+    Voici un exemple de réglage de la vitesse dans le jeu Celeste 3
+  </p>
+
+  <img src="../../assets/celeste3.jpg" alt="Interface du jeu Celeste pour le régagle de la vitesse de jeu"/>
+
+</div>
+
+<div class="recommandation-content" *ngIf="typeRecommandation == 'Cognitive'">
+
+  <h1>Permettre de modifier la couleur du texte et le contraste</h1>
+
+  <p>
+    Les contrastes élévés peuvent poser problèmes aux personnes qui ont certaines formes de dyslexie. Certaines
+    combinaisons de couleur fonctionnent mieux selon la forme. La meilleure solution est de proposer un choix libre de couleur de texte et de fond.
+  </p>
+
+  <h1>Surligner les mots importants</h1>
+
+  <p>
+    Beaucoup de textes peut être difficle à comprendre surtout pour les personnes ayant des difficultés de lecture. Certaines
+    personnes cherchent également les informations importantes sans lire intégralement le texte. Surligner les mots important est donc nécessaire pour
+    mettre en évidence les mots clés. De plus il faut éviter de faire des phrases trop longues pour que celle-ci soit facilement compréhensible par le joueur.
+  </p>
+
+  <h1>Permettre d'activer/désactiver les périphériques haptiques</h1>
+
+  <p>
+    Les périphériques haptiques sont très utiles en terme d'accessibilité mais peuvent être incomfortable et même causer des douleurs pour certaines personnes.
+    Il faut donc au minimum permettre au joueur de l'activer/désactiver mais au mieux pouvoir régler l'intensité de celui-ci.
+    <br/>
+    C'est ce que propose par exemple le jeu Forza Horizon 4
+  </p>
+
+  <img src="../../assets/forza-vibration.jpg" alt="Interface pour le régagle de l'intensité de vibration dans le jeu Forza Horizon 4"/>
+
+</div>

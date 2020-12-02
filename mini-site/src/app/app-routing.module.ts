@@ -1,3 +1,4 @@
+import { TypeRecommandationComponent } from './type-recommandation/type-recommandation.component';
 import { AvisComponent } from './avis/avis.component';
 import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
 import { RessourcesComponent } from './ressources/ressources.component';
@@ -9,12 +10,13 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/jeux', pathMatch: 'full'},
+  {path: '', redirectTo: '/jeux', pathMatch: 'full'},
   {path : 'jeux', component: JeuxComponent},
   {path : 'consoles', component: ConsolesComponent},
   {path : 'peripheriques', component: PeripheriquesComponent},
   {path : 'recommandations', component: RessourcesComponent},
   {path : 'avis', component: AvisComponent},
+  {path: 'recommandations/type-recommandation', component : TypeRecommandationComponent}
 
 ];
 

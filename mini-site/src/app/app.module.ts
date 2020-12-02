@@ -18,6 +18,7 @@ import { AvisComponent } from './avis/avis.component';
 
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
+import { TypeRecommandationComponent } from './type-recommandation/type-recommandation.component';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import { FormsModule } from '@angular/forms';
     RessourcesComponent,
     PeripheriquesComponent,
     PlanDuSiteComponent,
-    AvisComponent
+    AvisComponent,
+      TypeRecommandationComponent,
+      TypeRecommandationComponent
    ],
   imports: [
     BrowserModule,
