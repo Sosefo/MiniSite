@@ -1,0 +1,30 @@
+a{
+  border : 1px solid #a338c4;
+  color : #a338c4;
+  border-radius: 15px;
+  padding : 5px 20px;
+  font-weight: bold;
+}
+
+a:hover{
+  background-color:#a338c4;
+  color : white;
+}
+
+.link-container{
+  text-align: center;
+}
+
+.card{
+  display: inline-flex;
+  height: 50%;
+  margin:0 20px 30px;
+}
+
+.content{
+  margin-top: 50px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
