@@ -18,31 +18,31 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <span>
-        <a class="nav-link" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
+        <a class="nav-link" [class.active]="current == 1"  (click)="current=1" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
           Jeux
         </a>
       </span>
       <hr/>
       <span>
-        <a class="nav-link" aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
+        <a class="nav-link" [class.active]="current == 2"  (click)="current=2" aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
           Consoles
         </a>
       </span>
       <hr/>
       <span >
-        <a class="nav-link" aria-label="Accessibilité des périphériques de jeux" routerLink="/peripheriques">
+        <a class="nav-link" [class.active]="current == 3"  (click)="current=3" aria-label="Accessibilité des périphériques de jeux" routerLink="/peripheriques">
           Périphériques
         </a>
       </span>
       <hr/>
       <span>
-        <a class="nav-link" aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
+        <a class="nav-link" [class.active]="current == 4"  (click)="current=4" aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
           Recommandations
         </a>
       </span>
       <hr/>
       <span>
-        <a class="nav-link" routerLink="/avis">
+        <a class="nav-link" [class.active]="current == 5"  (click)="current=5" routerLink="/avis">
           Donnez nous votre avis !
         </a>
       </span>

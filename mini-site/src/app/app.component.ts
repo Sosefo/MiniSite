@@ -17,6 +17,7 @@ export class AppComponent{
   constructor(){}
 
   skipLinkPath = '';
+  current = 1;
   title = 'Accessibilité des jeux video dans la vie quotidienne';
 
   public skipToMainContent(): void {

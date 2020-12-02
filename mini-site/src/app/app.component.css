@@ -161,8 +161,8 @@ footer a {
   font-weight: normal;
 }
 
-.toolbar a:not(.active):hover {
-  border-bottom: 4px solid white;
+.toolbar a:hover , .active{
+  border-bottom: 4px solid white !important;
 }
 
 
