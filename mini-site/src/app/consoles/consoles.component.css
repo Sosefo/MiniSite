@@ -26,11 +26,13 @@
   margin-left: 20px;
 }
 
-
-
 :host ::ng-deep .slide{
   display: flex;
   width: 60%;
+}
+
+.nav-button:focus{
+  outline : none;
 }
 
 ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{

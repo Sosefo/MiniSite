@@ -2,22 +2,18 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <button mat-button class="nav-button">Console 1</button>
+        <button mat-button class="nav-button" (click)="activeConsole = 1">Débuts de l'accessibilité<br/> dans les consoles</button>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <button mat-button class="nav-button">Console 2</button>
-      </li>
-      <mat-divider></mat-divider>
-      <li>
-        <button mat-button class="nav-button">Console 3</button>
+        <button mat-button class="nav-button" (click)="activeConsole = 2">L'accessibilité dans<br/> la next-gen</button>
       </li>
     </ul>
   </div>
 </nav>
 
 <section class="content">
-  <div class="consoles">
+  <div class="consoles" *ngIf="activeConsole === 1">
     <h1>L'arrivée de l'accessibilité numérique dans les consoles</h1>
     <div>
         <carousel id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
@@ -42,18 +38,19 @@
         </carousel>
 
         <ol class="carousel-indicators" role="tablist">
-          <li role="tab" tabindex="activeSlide === 0 ? 0 : -1" aria-selected="activeSlide === 0" aria-controls="panneau-1"  (click)="nextSlide()" [class.active]="activeSlide === 0"></li>
-          <li role="tab" tabindex="activeSlide === 1 ? 0 : -1" aria-selected="activeSlide === 1" aria-controls="panneau-2" (click)="nextSlide()" [class.active]="activeSlide === 1"></li>
-          <li role="tab" tabindex="activeSlide === 2 ? 0 : -1" aria-selected="activeSlide === 2" aria-controls="panneau-3" (click)="nextSlide()" [class.active]="activeSlide === 2"></li>
+          <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
+          <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
+          <li role="tab" [attr.tabindex]="activeSlide === 2 ? 0 : -1" [attr.aria-selected]="activeSlide === 2" aria-controls="panneau-3" (click)="activeSlide=2" [class.active]="activeSlide === 2"></li>
         </ol>
     </div>
 
     <div class="main-text-content">
-      <p>Les premières consoles à avoir intégré le concept d’accessibilité sont les consoles de 8ème génération,<br/>
-         en particulier les consoles PS4 et XBOX ONE, ainsi que la Switch par la suite.
+      <p>
+        Les premières consoles à avoir intégré le concept d’accessibilité sont les consoles de 8ème génération,<br/>
+        en particulier les consoles <b>PS4</b> et <b>XBOX ONE</b>, ainsi que la <b>Switch</b> par la suite.
       </p>
       <p>
-        La PS4 offre des paramètres en termes d’accessibilité très variés :
+        La <b>PS4</b> offre des paramètres en termes d’accessibilité très variés :
       </p>
 
       <div class="main-text-properties">
@@ -67,7 +64,7 @@
       </div>
 
       <p>
-        Du côté de la XBOX ONE, les fonctionnalités sont similaire à la PS4, à l’exceptions de quelques points :
+        Du côté de la <b>XBOX ONE</b>, les fonctionnalités sont similaire à la PS4, à l’exceptions de quelques points :
       </p>
 
       <div class="main-text-properties">
@@ -78,8 +75,62 @@
       </div>
 
       <p>
-        Au niveau de la Switch, seul une reconfiguration des touches est proposée
+        Au niveau de la <b>Switch</b>, seul une reconfiguration des touches est proposée
       </p>
+    </div>
+  </div>
+
+
+  <div class="consoles" *ngIf="activeConsole === 2">
+    <h1>L'évolution de l'accessibilité numérique dans les consoles next-gen</h1>
+    <div>
+      <carousel class="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+        <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
+          <img class="d-block w-100" src="../../assets/accessibilite_ps5.PNG" alt="Plusieurs options d'accessibilité pour la PS4"/>
+          <div class="carousel-caption d-none d-md-block">
+            <p aria-hidden="true">Section transcription de chat (PS5)</p>
+          </div>
+        </slide>
+        <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 2">
+          <img class="d-block w-100" src="../../assets/accessibilite_xboxseriesx.jpg" alt="Détails des paramètres de sous titre pour la PS4" />
+          <div class="carousel-caption d-none d-md-block">
+            <p aria-hidden="true">Indicateur tactiles des ports (Xbox Series X/S)</p>
+          </div>
+        </slide>
+      </carousel>
+
+      <ol class="carousel-indicators" role="tablist">
+        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
+        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
+        </ol>
+    </div>
+
+    <div class="main-text-content">
+      <p>
+        Avec la très récente sortie des consoles de nouvelle génération, la <b>PS5</b> et la <b>XBOX Series X/S</b><br/>
+        proposent des options d'accessibilités plus complètes que leur prédecesseurs
+      </p>
+      <p>
+        La <b>PS5</b> offre des améliorations sur les fonctionnalités d'accessibilité de la PS4, elle ajoute également de nouvelles fonctionnalités :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Configuration de la force de pression, pour les gachettes adaptatives de la manette</li>
+          <li>Transcription de chat (texte et audio)</li>
+          <li>Dictée vocale</li>
+        </ul>
+      </div>
+
+      <p>
+        Du côté de la <b>XBOX Series X/S</b>, on peut noter un ajout particulier car ce dernier est physique et non numérique :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Ajout d'indicateurs tactiles sur les ports de la console pour faciliter son installation par les personnes aveugles et malvoyantes</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
