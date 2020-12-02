@@ -23,12 +23,21 @@
         <carousel id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
           <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
             <img class="d-block w-100" src="../../assets/accessibilite_ps4_1.PNG" alt="Plusieurs options d'accessibilité pour la PS4"/>
+            <div class="carousel-caption d-none d-md-block">
+              <p aria-hidden="true">Différents paramètres d'accessibilité (PS4)</p>
+          </div>
           </slide>
           <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 2">
             <img class="d-block w-100" src="../../assets/accessibilite_ps4_2.PNG" alt="Détails des paramètres de sous titre pour la PS4" />
+            <div class="carousel-caption d-none d-md-block">
+              <p aria-hidden="true">Configuration des sous titres (PS4)</p>
+            </div>
           </slide>
           <slide role="tabpanel" id="panneau-3" aria-hidden="!activeSlide === 2" aria-roledescription="slide" aria-label="2 of 2">
             <img class="d-block w-100" src="../../assets/accessibilite_xboxone.jpg" alt="Plusieurs options d'accessibilité pour la XBOX One" />
+            <div class="carousel-caption d-none d-md-block">
+              <p aria-hidden="true">Différents paramètres d'accessibilité (Xbox One)</p>
+            </div>
           </slide>
         </carousel>
 
