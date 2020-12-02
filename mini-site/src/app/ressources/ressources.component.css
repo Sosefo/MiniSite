@@ -4,6 +4,7 @@ a{
   border-radius: 15px;
   padding : 5px 20px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 @media all and (max-width: 1024px) {
