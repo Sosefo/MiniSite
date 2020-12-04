@@ -33,4 +33,9 @@ export class ConsolesComponent implements OnInit {
       this.navbarConsoles.nativeElement.setAttribute('style', '');
     }
   }
+
+  consoleChange(newConsole: number): void {
+    this.activeConsole = newConsole;
+    this.navbarConsoles.nativeElement.setAttribute('style', '');
+  }
 }

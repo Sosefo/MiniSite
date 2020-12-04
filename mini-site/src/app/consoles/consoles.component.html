@@ -2,18 +2,18 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <button mat-button class="nav-button" (click)="activeConsole = 1">Débuts de l'accessibilité<br/> dans les consoles</button>
+        <button mat-button class="nav-button" (click)="consoleChange(1)">Débuts de l'accessibilité<br/> dans les consoles</button>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <button mat-button class="nav-button" (click)="activeConsole = 2">L'accessibilité dans<br/> la next-gen</button>
+        <button mat-button class="nav-button" (click)="consoleChange(2)">L'accessibilité dans<br/> la next-gen</button>
       </li>
     </ul>
   </div>
 </nav>
 
 <section class="content">
-  <button   #navbarConsolesCollapse (click)="displayNav()" id="navbarConsolesCollapse" class="navbar-toggler" type="button" aria-controls="navbarConsoles" aria-expanded="false" aria-label="Toggle consoles navigation">
+  <button #navbarConsolesCollapse (click)="displayNav()" id="navbarConsolesCollapse" class="navbar-toggler" type="button" aria-controls="navbarConsoles" aria-expanded="false" aria-label="Toggle consoles navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="consoles" *ngIf="activeConsole === 1">
