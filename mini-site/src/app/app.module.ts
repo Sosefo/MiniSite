@@ -15,10 +15,11 @@ import { PlanDuSiteComponent } from './plan-du-site/plan-du-site.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import { AvisComponent } from './avis/avis.component';
-
+import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { TypeRecommandationComponent } from './type-recommandation/type-recommandation.component';
+import { MycarouselComponent } from './mycarousel/mycarousel.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { TypeRecommandationComponent } from './type-recommandation/type-recomman
     PlanDuSiteComponent,
     AvisComponent,
       TypeRecommandationComponent,
-      TypeRecommandationComponent
+      TypeRecommandationComponent,
+      MycarouselComponent
    ],
   imports: [
     BrowserModule,
@@ -42,6 +44,7 @@ import { TypeRecommandationComponent } from './type-recommandation/type-recomman
     MatStepperModule,
     MatButtonModule,
     FormsModule,
+    MatIconModule,
     MatRadioModule,
     AppRoutingModule,
     MatSidenavModule,

@@ -1,6 +1,5 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import * as $ from 'jquery';
-import { CarouselComponent } from 'ngx-bootstrap/carousel';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-peripheriques',
@@ -20,7 +19,6 @@ export class PeripheriquesComponent implements OnInit{
   constructor() {
   }
 
-  activeSlide = 0;
 
   activePeripherique = 1;
 
@@ -41,4 +39,5 @@ export class PeripheriquesComponent implements OnInit{
     this.activePeripherique = newPeripherique;
     this.navbarConsoles.nativeElement.setAttribute('style', '');
   }
+
 }

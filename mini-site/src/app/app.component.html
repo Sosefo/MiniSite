@@ -4,19 +4,27 @@
 <!-- Toolbar -->
 <header role="banner" >
   <nav role="navigation" arial-label="Menu de navigation" class="toolbar navbar navbar-dark navbar-expand-lg">
-    <img
-    width="40"
-    alt="Logo"
-    src="../assets/logo.png"
-    id="logo"
-    />
-    <span id="titre">{{title}}</span>
+    <a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">    <img
+      width="40"
+      alt="Logo accessibilité (retour à l'accueil)"
+      src="../assets/logo.png"
+      id="logo"
+      /></a>
+
+
+    <span id="titre"><a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">{{title}}</a>
+      </span>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <span>
+        <a class="nav-link" routerLinkActive="active" aria-label="Page d'accueil" routerLink="/accueil">
+          Accueil
+        </a>
+      </span>
       <span>
         <a class="nav-link" routerLinkActive="active" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
           Jeux

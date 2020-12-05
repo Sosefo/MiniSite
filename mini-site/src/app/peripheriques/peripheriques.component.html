@@ -30,8 +30,8 @@
   <div class="peripherique" *ngIf="activePeripherique == 1">
     <h1>Manette Ps4 pour un usage à une seule main (gauche)</h1>
 
-    <div>
-      <carousel #slide1 id="peripheriquesSlide1" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+    <div aria-hidden="true">
+      <carousel #carousel id="peripheriquesSlide1" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
         <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
           <img class="d-block w-100" src="../../assets/manette_hitclic1.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
         </slide>
@@ -39,6 +39,8 @@
           <img class="d-block w-100" src="../../assets/manette_hitclic2.PNG" alt="Manette Ps4 pour un usage à une main vue du dessous" />
         </slide>
       </carousel>
+
+      <button mat-icon-button aria-label="Arrêter le carousel" (click)="pause()"><mat-icon #playPauseIcon aria-hidden="false">pause</mat-icon></button>
 
       <ol class="carousel-indicators" role="tablist">
         <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
@@ -77,7 +79,7 @@
   <div class="peripherique" *ngIf="activePeripherique == 2">
     <h1>Xbox adaptive controller</h1>
 
-    <div>
+    <div aria-hidden="true">
       <carousel #slide2 id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette Xbox Adaptive Controller">
         <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
           <img class="d-block w-100" src="../../assets/xbox_adaptative1.PNG" alt="Xbox adaptive controller"/>
@@ -131,7 +133,7 @@
   <div class="peripherique" *ngIf="activePeripherique == 3">
     <h1>Adaptive Gaming Kit</h1>
 
-    <div>
+    <div aria-hidden="true">
       <carousel #slide3 id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Adaptive gaming kit et ses accessoires">
         <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
           <img class="d-block w-100" src="../../assets/gaming_kit1.PNG" alt="Adaptive gaming kit"/>
@@ -176,7 +178,7 @@
   <div class="peripherique" *ngIf="activePeripherique == 4">
     <h1>Handi Joystick</h1>
 
-    <div>
+    <div aria-hidden="true">
       <carousel #slide4 id="peripheriquesSlide" [interval]="4800" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Manette Handi Joystick">
         <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 3">
           <img class="d-block w-100" src="../../assets/handi_joystick1.png" alt="Handi joystick"/>

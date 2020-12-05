@@ -1,0 +1,16 @@
+<div aria-hidden="true">
+  <carousel #carousel id="peripheriquesSlide1" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+
+
+    <slide *ngFor="let imageSrc of imagesSrc;let i=index;" role="tabpanel" id="{{'panneau-' + i+1}}"
+    aria-hidden="!activeSlide === i" aria-roledescription="slide" [attr.aria-label]="i + 'of' + imagesSrc.length">
+      <img class="d-block w-100" [attr.src]="imageSrc" [attr.alt]="imagesText[i]"/>
+    </slide>
+  </carousel>
+
+  <button mat-icon-button aria-label="Arrêter le carousel" (click)="pause()"><mat-icon #playPauseIcon aria-hidden="false">pause</mat-icon></button>
+
+  <ol class="carousel-indicators" role="tablist">
+    <li *ngFor="let imageSrc of imagesSrc;let i=index;" role="tab" [attr.tabindex]="activeSlide === i ? 0 : -1" [attr.aria-selected]="activeSlide === i" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === i"></li>
+  </ol>
+</div>

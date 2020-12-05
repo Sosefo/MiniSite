@@ -162,7 +162,11 @@ footer a {
   font-weight: normal;
 }
 
-.toolbar a:hover , .active{
+.toolbar a:hover{
+  border-bottom: 4px solid white ;
+}
+
+.active{
   border-bottom: 4px solid white !important;
 }
 
@@ -191,4 +195,8 @@ a:hover {
 
 a:hover {
   color: #125699;
+}
+
+.accueil-link:hover{
+  border-bottom:none !important;
 }
