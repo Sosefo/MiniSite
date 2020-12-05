@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-consoles',
@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsolesComponent implements OnInit {
 
+  @ViewChild('navbarConsoles')
+  navbarConsoles: ElementRef;
+
+  @ViewChild('navbarConsolesCollapse')
+  navbarConsolesCollapse: ElementRef;
+
+  displayedNavBar: boolean;
+
   constructor() { }
 
   activeSlide = 0;
@@ -14,5 +22,20 @@ export class ConsolesComponent implements OnInit {
   activeConsole = 1;
 
   ngOnInit(): void {
+    this.displayedNavBar = false;
+  }
+
+  displayNav(): void {
+    this.displayedNavBar = !this.displayedNavBar;
+    if (this.displayedNavBar) {
+      this.navbarConsoles.nativeElement.setAttribute('style', 'width: 75%; flex: none;');
+    } else {
+      this.navbarConsoles.nativeElement.setAttribute('style', '');
+    }
+  }
+
+  consoleChange(newConsole: number): void {
+    this.activeConsole = newConsole;
+    this.navbarConsoles.nativeElement.setAttribute('style', '');
   }
 }
