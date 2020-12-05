@@ -20,6 +20,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { TypeRecommandationComponent } from './type-recommandation/type-recommandation.component';
 import { MycarouselComponent } from './mycarousel/mycarousel.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { MycarouselComponent } from './mycarousel/mycarousel.component';
     MatRadioModule,
     AppRoutingModule,
     MatSidenavModule,
+    MatExpansionModule,
 
   ],
   providers: [],
