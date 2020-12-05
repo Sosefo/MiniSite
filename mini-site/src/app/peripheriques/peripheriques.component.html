@@ -31,21 +31,7 @@
     <h1>Manette Ps4 pour un usage à une seule main (gauche)</h1>
 
     <div aria-hidden="true">
-      <carousel #carousel id="peripheriquesSlide1" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
-        <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
-          <img class="d-block w-100" src="../../assets/manette_hitclic1.PNG" alt="Manette Ps4 pour un usage à une main vue du dessus"/>
-        </slide>
-        <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 2">
-          <img class="d-block w-100" src="../../assets/manette_hitclic2.PNG" alt="Manette Ps4 pour un usage à une main vue du dessous" />
-        </slide>
-      </carousel>
-
-      <button mat-icon-button aria-label="Arrêter le carousel" (click)="pause()"><mat-icon #playPauseIcon aria-hidden="false">pause</mat-icon></button>
-
-      <ol class="carousel-indicators" role="tablist">
-        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
-      </ol>
+      <app-mycarousel [imagesSrc]="carousel1Src" [imagesText]="carouselText"></app-mycarousel>
     </div>
     <div class="main-text-content">
         <p>La société HitClic créée en 2019 par David Combarieu et Théo Jordan,
@@ -58,10 +44,10 @@
         </p>
         <p>
           Parmi les périphériques déjà developpés par l'entreprise, on
-          y trouve une adaptation d'une manette PS4 pour un usage exclusif à une seule main ( ici main gauche )
+          y trouve une adaptation d'une manette <b>PS4</b> pour un usage exclusif à une seule main ( ici main gauche )
         </p>
         <p>
-          Voici les adapaptations par rapport à une manette de PS4 classique :
+          Voici les adapaptations par rapport à une manette de <b>PS4</b> classique :
         </p>
 
           <div class="main-text-properties">
@@ -80,19 +66,7 @@
     <h1>Xbox adaptive controller</h1>
 
     <div aria-hidden="true">
-      <carousel #slide2 id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette Xbox Adaptive Controller">
-        <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
-          <img class="d-block w-100" src="../../assets/xbox_adaptative1.PNG" alt="Xbox adaptive controller"/>
-        </slide>
-        <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 2">
-          <img class="d-block w-100" src="../../assets/xbox_adaptative2.PNG" alt="Xbox adaptive controller et ses 12 prises jack pour y connecter des périphériques externes" />
-        </slide>
-      </carousel>
-
-      <ol class="carousel-indicators" role="tablist">
-        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
-      </ol>
+      <app-mycarousel [imagesSrc]="carousel2Src" [imagesText]="carouselText"></app-mycarousel>
     </div>
     <div class="main-text-content">
         <p>
@@ -106,7 +80,7 @@
           <br/>
         </p>
         <p>
-          Cette manette est compatible avec les consoles Xbox et les systèmes Windows 10 mais la volonté de Microsoft est de l'étendre
+          Cette manette est compatible avec les consoles <b>Xbox</b> et les systèmes Windows 10 mais la volonté de Microsoft est de l'étendre
           à tout les systèmes.
           <br/>
           Aujourd'hui, elle intègre également des fonctionnalités comme la reconnaissance vocale, la reconnaissance écrite ainsi que l'intégration d'un narrateur
@@ -134,19 +108,7 @@
     <h1>Adaptive Gaming Kit</h1>
 
     <div aria-hidden="true">
-      <carousel #slide3 id="peripheriquesSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Adaptive gaming kit et ses accessoires">
-        <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 2">
-          <img class="d-block w-100" src="../../assets/gaming_kit1.PNG" alt="Adaptive gaming kit"/>
-        </slide>
-        <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 2">
-          <img class="d-block w-100" src="../../assets/gaming_kit2.PNG" alt="Elements du kit connectés à la manette Xbox adaptative" />
-        </slide>
-      </carousel>
-
-      <ol class="carousel-indicators" role="tablist">
-        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
-      </ol>
+      <app-mycarousel [imagesSrc]="carousel3Src" [imagesText]="carouselText"></app-mycarousel>
     </div>
     <div class="main-text-content">
         <p>
@@ -179,27 +141,11 @@
     <h1>Handi Joystick</h1>
 
     <div aria-hidden="true">
-      <carousel #slide4 id="peripheriquesSlide" [interval]="4800" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Manette Handi Joystick">
-        <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 3">
-          <img class="d-block w-100" src="../../assets/handi_joystick1.png" alt="Handi joystick"/>
-        </slide>
-        <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 3">
-          <img class="d-block w-100" src="../../assets/handi_joystick2.png" alt="Exemple de configuration de la manette Handi joytick pour Nintendo Switch" />
-        </slide>
-        <slide role="tabpanel" id="panneau-3" aria-hidden="!activeSlide === 2" aria-roledescription="slide" aria-label="3 of 3">
-          <img class="d-block w-100" src="../../assets/handi_joystick3.png" alt="Exemple de configuration de la manette Handi joytick pour PlayStation" />
-        </slide>
-      </carousel>
-
-      <ol class="carousel-indicators" role="tablist">
-        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 2 ? 0 : -1" [attr.aria-selected]="activeSlide === 2" aria-controls="panneau-2" (click)="activeSlide=2" [class.active]="activeSlide === 2"></li>
-      </ol>
+      <app-mycarousel [imagesSrc]="carousel4Src" [imagesText]="carouselText"></app-mycarousel>
     </div>
     <div class="main-text-content">
         <p>
-          L’entreprise française Bluelinea spécialisée dans la domotique d’assistance aux personnes dépendantes a développé une manette utilisable avec la bouche. Seule, elle est compatible avec les consoles PlayStation,Switch et PC.
+          L’entreprise française Bluelinea spécialisée dans la domotique d’assistance aux personnes dépendantes a développé une manette utilisable avec la bouche. Seule, elle est compatible avec les consoles <b>PlayStation, Switch et PC</b>.
           Il peut être utilisé avec n'importes quels types de jeux (Sport,musique,course,jeu de rôle,...).
           <br/>
         </p>
@@ -220,7 +166,7 @@
               <li> Elle est fixée sur un axe qui réagit avec les mouvements de bouche et de tête exactement de la même manière qu’un joystick </li>
               <li> Elle possède 4 capteurs réagissant aux aspirations et expirations </li>
               <li> Ele possède un bouton pour la lèvre inférieure </li>
-              <li> Il est possible d'éffectuer 24 à 32 combinaisons de souffles/aspirations {{activeSlide}} </li>
+              <li> Il est possible d'éffectuer 24 à 32 combinaisons de souffles/aspirations</li>
             </ul>
           </div>
     </div>

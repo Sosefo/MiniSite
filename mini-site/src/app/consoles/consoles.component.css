@@ -4,19 +4,6 @@
   height: 100%;
 }
 
-@media all and (max-width: 420px) {
-  ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media all and (min-width: 421px) {
-  ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
-    width: 30px;
-    height: 30px;
-  }
-}
 
 @media all and (max-width: 992px) {
   .sous-navigation {
@@ -33,16 +20,6 @@
     text-align: center;
     font-size: 30px;
   }
-
-  /* Carousel */
-  :host ::ng-deep .slide{
-    width: 100%;
-  }
-
-  .carousel-caption {
-    display: block !important;
-  }
-  /**/
 
   .main-text-content p {
     text-align: center;
@@ -64,12 +41,6 @@
   .navbar-toggler {
     display: none;
   }
-
-  /* Carousel */
-  :host ::ng-deep .slide {
-    width: 60%;
-  }
-  /**/
 }
 
 .content {
@@ -84,6 +55,12 @@
   margin-right: auto;
 }
 
+  /* Carousel */
+  :host ::ng-deep app-mycarousel .slide {
+    width: 60%;
+  }
+  /**/
+
 .nav-button{
   height: 100px;
   width: 200px;
@@ -94,62 +71,8 @@
   margin-left: 20px;
 }
 
-:host ::ng-deep .slide{
-  display: flex;
-}
-
 .nav-button:focus{
   outline : none;
-}
-
-::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
-  background-color: #8b0ead;
-}
-
-.carousel-indicators {
-  position: relative;
-  width: fit-content;
-  margin: 0 auto 25px;
-}
-
-::ng-deep .carousel-control-prev{
-  order: 0;
-  position: initial;
-}
-::ng-deep .carousel-control-next{
-  order: 2;
-  position: initial;
-}
-
-.carousel-indicators li{
-  height: 4px;
-  background-color: #8b0ead;
-}
-
-::ng-deep .carousel {
-  margin-top: 25px;
-}
-
-::ng-deep .carousel-inner {
-  order: 1;
-}
-
-::ng-deep carousel > div {
-  margin: auto;
-}
-
-.carousel-caption {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-  color: #333333;
-}
-
-.carousel-caption p {
-  margin: 0.5rem 0;
 }
 
 .navbar-toggler {

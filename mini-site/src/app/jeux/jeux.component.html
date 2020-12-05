@@ -93,35 +93,8 @@
   <div class="consoles" *ngIf="activeJeu === 3">
     <h1>Configurations visuelles</h1>
     <div>
-      <carousel id="jeuxSlide" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Modes d'affichages en partie de The Last Of Us 2">
-        <slide role="tabpanel" id="panneau-1" aria-hidden="!activeSlide === 0" aria-roledescription="slide" aria-label="1 of 4">
-          <img class="d-block w-100" src="../../assets/visuel1_TLOU2.png" alt="Affichage par défaut dans The Last of Us 2"/>
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </slide>
-        <slide role="tabpanel" id="panneau-2" aria-hidden="!activeSlide === 1" aria-roledescription="slide" aria-label="2 of 4">
-          <img class="d-block w-100" src="../../assets/visuel2_TLOU2.png" alt="Affichage numéro 1 dans The Last of Us 2 : (Alliés en vert)" />
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </slide>
-        <slide role="tabpanel" id="panneau-3" aria-hidden="!activeSlide === 2" aria-roledescription="slide" aria-label="3 of 4">
-          <img class="d-block w-100" src="../../assets/visuel3_TLOU2.png" alt="Affichage numéro 2 dans The Last of Us 2 : (Alliés en bleu)" />
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </slide>
-        <slide role="tabpanel" id="panneau-4" aria-hidden="!activeSlide === 3" aria-roledescription="slide" aria-label="4 of 4">
-          <img class="d-block w-100" src="../../assets/visuel4_TLOU2.png" alt="Affichage numéro 3 dans The Last of Us 2 : (Alliés en bleu, enemis en rouge)" />
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </slide>
-      </carousel>
+      <app-mycarousel class="app" [imagesSrc]="carouselSrc" [imagesText]="carouselAlt"></app-mycarousel>
 
-      <ol class="carousel-indicators" role="tablist">
-        <li role="tab" [attr.tabindex]="activeSlide === 0 ? 0 : -1" [attr.aria-selected]="activeSlide === 0" aria-controls="panneau-1"  (click)="activeSlide=0" [class.active]="activeSlide === 0"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 1 ? 0 : -1" [attr.aria-selected]="activeSlide === 1" aria-controls="panneau-2" (click)="activeSlide=1" [class.active]="activeSlide === 1"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 2 ? 0 : -1" [attr.aria-selected]="activeSlide === 2" aria-controls="panneau-3" (click)="activeSlide=2" [class.active]="activeSlide === 2"></li>
-        <li role="tab" [attr.tabindex]="activeSlide === 3 ? 0 : -1" [attr.aria-selected]="activeSlide === 3" aria-controls="panneau-4" (click)="activeSlide=3" [class.active]="activeSlide === 3"></li>
-      </ol>
     </div>
 
     <div class="main-text-content">
