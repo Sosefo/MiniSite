@@ -16,6 +16,8 @@ export class JeuxComponent implements OnInit {
 
   displayedNavBar: boolean;
 
+  carouselSrc = ['../../assets/visuel1_TLOU2.png', '../../assets/visuel2_TLOU2.png', '../../assets/visuel3_TLOU2.png', '../../assets/visuel4_TLOU2.png'];
+  carouselAlt = ['Affichage par défaut dans The Last of Us 2', 'Affichage numéro 1 dans The Last of Us 2 : (Alliés en vert)', 'Affichage numéro 2 dans The Last of Us 2 : (Alliés en bleu)', 'Affichage numéro 3 dans The Last of Us 2 : (Alliés en bleu, enemis en rouge)'];
   constructor(private sanitizer: DomSanitizer) {
     this.safeURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/zssOx81k768');
   }

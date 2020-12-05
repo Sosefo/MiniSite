@@ -11,15 +11,21 @@ export class MycarouselComponent implements OnInit {
 
 
   @Input()
+  labels: string[];
+
+  @Input()
   imagesSrc: string[];
+
+  @Input()
+  imagesText: string[];
 
   @ViewChild('carousel')
   carousel: CarouselComponent;
 
   @ViewChild('playPauseIcon')
+  playPauseIcon: MatIcon;
 
   isStoped = false;
-  playPauseIcon: MatIcon;
   activeSlide = 0;
 
   constructor() { }
@@ -30,7 +36,7 @@ export class MycarouselComponent implements OnInit {
 
   pause(): void{
 
-    if(!this.isStoped){
+    if (!this.isStoped){
       this.carousel.pause();
       this.playPauseIcon._elementRef.nativeElement.innerHTML = 'play_arrow';
       this.isStoped = true;

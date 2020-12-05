@@ -10,20 +10,6 @@
 }
 
 
-@media all and (max-width: 420px) {
-  ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media all and (min-width: 421px) {
-  ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
-    width: 30px;
-    height: 30px;
-  }
-}
-
 @media all and (max-width: 992px) {
   .sous-navigation {
     transition: 0.3s;
@@ -39,16 +25,6 @@
     text-align: center;
     font-size: 30px;
   }
-
-  /* Carousel */
-  :host ::ng-deep .slide{
-    width: 100%;
-  }
-
-  .carousel-caption {
-    display: block !important;
-  }
-  /**/
 
   .main-text-content p {
     text-align: center;
@@ -72,7 +48,7 @@
   }
 
   /* Carousel */
-  :host ::ng-deep .slide {
+  :host ::ng-deep app-mycarousel .slide {
     width: 40%;
   }
   /**/
