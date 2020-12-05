@@ -9,10 +9,8 @@ import { ActivatedRoute} from '@angular/router';
 })
 export class TypeRecommandationComponent implements OnInit {
 
-  public safeURL: SafeResourceUrl;
   public typeRecommandation: string;
-  constructor(private route: ActivatedRoute, private _sanitizer: DomSanitizer) {
-    this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Md3x1--gzK0?start=49&end=55');
+  constructor(private route: ActivatedRoute) {
   }
 
   ngOnInit() {
