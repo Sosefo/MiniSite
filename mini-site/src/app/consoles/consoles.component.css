@@ -25,11 +25,6 @@
     overflow: hidden;
   }
 
-  .collapsed {
-    left: 0;
-    display: block;
-  }
-
   .consoles {
     margin: 0 10px !important;
   }
@@ -133,7 +128,6 @@
 
 ::ng-deep .carousel {
   margin-top: 25px;
-  z-index: -1;
 }
 
 ::ng-deep .carousel-inner {

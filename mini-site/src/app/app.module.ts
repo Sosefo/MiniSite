@@ -19,6 +19,7 @@ import { AvisComponent } from './avis/avis.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { TypeRecommandationComponent } from './type-recommandation/type-recommandation.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { TypeRecommandationComponent } from './type-recommandation/type-recomman
     MatRadioModule,
     AppRoutingModule,
     MatSidenavModule,
+    MatExpansionModule,
 
   ],
   providers: [],
