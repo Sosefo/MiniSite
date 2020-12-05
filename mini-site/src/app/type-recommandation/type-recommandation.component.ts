@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -8,14 +9,15 @@ import { ActivatedRoute} from '@angular/router';
 })
 export class TypeRecommandationComponent implements OnInit {
 
-  typeRecommandation: string;
-  constructor(private route: ActivatedRoute) { }
+  public typeRecommandation: string;
+  constructor(private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
-
     this.route.queryParams.subscribe(params => {
       this.typeRecommandation = params.type;
   });
   }
+
 
 }
