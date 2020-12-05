@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import * as $ from 'jquery';
 import { CarouselComponent } from 'ngx-bootstrap/carousel';
 
@@ -10,6 +10,8 @@ import { CarouselComponent } from 'ngx-bootstrap/carousel';
 export class PeripheriquesComponent implements OnInit{
 
 
+  @Output() activate = new EventEmitter();
+
   constructor() {
   }
 
@@ -19,6 +21,7 @@ export class PeripheriquesComponent implements OnInit{
 
   ngOnInit(): void {
 
+    this.activate.emit(3);
 
   }
 }

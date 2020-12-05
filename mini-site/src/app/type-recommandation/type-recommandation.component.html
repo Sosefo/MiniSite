@@ -55,11 +55,16 @@
 
 <div class="recommandation-content" *ngIf="typeRecommandation == 'Moteur'">
 
-  <h1>Permettre de personnaliser l'interface</h1>
+  <h1>Eviter ou donner une alternative pour le maintien d'un bouton enfoncé</h1>
 
   <p>
-
+    Maintenir un bouton enfoncé peut être douloureux et fatiguant pour certains joueurs. Dans la mesure du possible, il
+    faut éviter d'inclure ce type de controles mais dans le pire des cas donner une alternative au joueur.
+    <br/>
+    Le jeu The Long Dark propose par exemple l'alternative d'appuyer seulement une fois au lieu de garder le bouton enfoncé.
   </p>
+
+  <img src="../../assets/longdarkinteraction.png" alt="Interface avec alternative au maintien de bouton enfoncé dans le jeu The Long Dark"/>
 
   <mat-divider aria-hidden="true"></mat-divider>
 
@@ -95,7 +100,14 @@
   <p>
     Les contrastes élévés peuvent poser problèmes aux personnes qui ont certaines formes de dyslexie. Certaines
     combinaisons de couleur fonctionnent mieux selon la forme. La meilleure solution est de proposer un choix libre de couleur de texte et de fond.
+    <br/>
+    Le jeu Fallout 3 propose une interface permettant de régler la couleur du texte ainsi que son opacité.
   </p>
+
+  <img src="../../assets/fallout-3-pip-boy-settings.png" alt="Interface pour le régagle de la couleur du texte dans le jeu Fallout 3"/>
+
+
+  <mat-divider aria-hidden="true"></mat-divider>
 
   <h1>Surligner les mots importants</h1>
 
@@ -103,7 +115,14 @@
     Beaucoup de textes peut être difficle à comprendre surtout pour les personnes ayant des difficultés de lecture. Certaines
     personnes cherchent également les informations importantes sans lire intégralement le texte. Surligner les mots important est donc nécessaire pour
     mettre en évidence les mots clés. De plus il faut éviter de faire des phrases trop longues pour que celle-ci soit facilement compréhensible par le joueur.
+    <br/>
+    Le jeu Assassins Creed Syndicate indique les mots impportants en changeant simplement la couleur du texte.
   </p>
+
+  <img src="../../assets/acstext.png" alt="Changement de couleur des mots importants dans le jeu Assassins Creed Syndicate"/>
+
+
+  <mat-divider aria-hidden="true"></mat-divider>
 
   <h1>Permettre d'activer/désactiver les périphériques haptiques</h1>
 
@@ -131,25 +150,75 @@
 
   <img src="../../assets/warlock-of-firetop-mountain-typography.png" alt="Interface pour le régagle de la taille de la police dans le jeu Warlock of Firetop Mountain"/>
 
-  <h1>Garantir la prise en charge du lecteur d'écran et même dans les programmes d'installation</h1>
+  <mat-divider aria-hidden="true"></mat-divider>
+
+  <h1>Montrer que les éléments interactifs sont interactifs</h1>
 
   <p>
-    Essentiel pour les personnes aveugles ou malvoyantes, certains types de jeux ne sont pas fait pour y inclure un lecteur d'écran. Cependant les jeux qui sont basé sur du texte, comme Hearthstone
-    peuvent parfaitement prendre en charge un lecteur d'écran.
+    Certains joueurs peuvent avoir des problèmes pour distinguer les élements interactifs présents, il est donc important de mettre ces éléments en évidence.
+    Cela peut se faire par des changements de styles et/ou contrastes.
     <br/>
-    Par exemple, le jeu Skullgirls qui est un jeu de combat, propose un gameplay totalement accessible aux personnes aveugles et utilise une librairie appelé Tolk qui redirige le texte vers n'importe qu'elle lecteur d'écran.
-    Le SDK Xbox permet également d'utiliser une API similiaire pour les systèmes Xbox et Windows.
+    Comme le fait par exemple, le jeu Silence.
   </p>
 
-  <video src="https://www.youtube.com/watch?v=Md3x1--gzK0" controls>
-    Votre navigateur ne gère pas l'élément <code>video</code>.
-  </video>
+  <img src="../../assets/silencehints.png" alt="Changement de style lorsqu'un élément est interactif"/>
 
-  <h1></h1>
+  <mat-divider aria-hidden="true"></mat-divider>
+
+  <h1>Permettre de modifer le contraste</h1>
 
   <p>
+    Les problèmes de constraste ne concerne pas seulement les situations de déficiences visuelles mais également lors de l'exposition du soleil sur l'ecran ou encore lors du mode economie d'énergie de la console.
+    Permettre de modifer le contraste est donc important pour le confort du joueur. Permettre de modifier les assets, en mettant par exemple des fonds plus sombres est également une bonne pratique en terme d'accessibilité.
     <br/>
+    Le jeu, Street Fighter 4 permet par exemple, de remplacer les animations de fond par un fond noir qui augmente le contraste.
   </p>
+
+  <img src="../../assets/sf4-bg.png" alt="Alternative d'un fond noir qui augmente le contraste dans le jeu Street Fighter 4"/>
+
+
+</div>
+
+<div class="recommandation-content" *ngIf="typeRecommandation == 'Son'">
+
+  <h1>Mettre des sous-titres pour toutes les conversations importantes</h1>
+
+  <p>
+    Les sous-titres sont utilisés par beaucoup de joueurs et pour de nombreuses raisons comme une déficience auditive, des nuisances sonores environnantes ou encore du materiel defecteux.
+    Les conversations ou élements textuelles important pour l'avancée du jeu doivent être sous-titrés pour garantir
+    une bonne expérience au joueur. De plus, les sous-titres doivent être lisible et contenir des phrases courtes.
+    <br/>
+    Aujourd'hui cela est inclut dans la plupart des jeux mais voici l'exemple du jeu Marvel’s Spider-Man dont les sous-titres sont bien intégrés.
+  </p>
+
+  <img src="../../assets/spiderman_subtitles.jpg" alt="Exemple de sous-titres dans le jeu Marvel’s Spider-Man"/>
+
+  <mat-divider aria-hidden="true"></mat-divider>
+
+  <h1>Mettre des indications pour les sons de fond importants </h1>
+
+  <p>
+    Pour permettre a tous les joueurs la même expérience, mettre des indications visuelles lors d'effets sonores est important. Cela permet aux joueurs
+    qui jouent sans son d'être dans l'ambiance.
+
+  <br/>
+    Ubisoft inclut ces pratiques comme par exemple dans le jeu Far Cry: New Dawn. En plus de simple indications, la provenance des sons est également indiquées.
+  </p>
+
+  <img src="../../assets/far-cry-new-dawn-subtitles.jpg" alt="Indications visuelles des effets sonores dans le jeu Far Cry: New Dawn"/>
+
+  <mat-divider aria-hidden="true"></mat-divider>
+
+  <h1>Permettre de modifier le volume des effets sonores, de la musique de fond et des conversations</h1>
+
+  <p>
+    Le joueur doit pouvoir modifier indépendamment le volume de la musique d'ambiance, des effets sonores ainsi que des conversations. Cela est
+    d'autant plus nécessaire pour les joueurs ayant une déficience affectant la perception des fréquences sonores.
+    <br/>
+    Une interface simple suffit, comme dans le jeu Diablo 3
+  </p>
+
+  <img src="../../assets/diablo-3-sound-options.jpg" alt="Interface de réglagles des différents types de sons dans le jeu Diablo 3"/>
 
 
 </div>
