@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 
 @Component({
@@ -17,20 +18,27 @@ export class PeripheriquesComponent implements OnInit{
   displayedNavBar: boolean;
   activePeripherique = 1;
 
-  carousel1Src = ['../../assets/manette_hitclic1.PNG','../../assets/manette_hitclic2.PNG'];
+  carousel1Src = ['../../assets/manette_hitclic1.PNG', '../../assets/manette_hitclic2.PNG'];
   carouselText = [];
 
-  carousel2Src = ['../../assets/xbox_adaptative1.PNG','../../assets/xbox_adaptative2.PNG'];
+  carousel2Src = ['../../assets/xbox_adaptative1.PNG', '../../assets/xbox_adaptative2.PNG'];
 
-  carousel3Src = ['../../assets/gaming_kit1.PNG','../../assets/gaming_kit2.PNG'];
+  carousel3Src = ['../../assets/gaming_kit1.PNG', '../../assets/gaming_kit2.PNG'];
 
-  carousel4Src = ['../../assets/handi_joystick1.png','../../assets/handi_joystick1.png','../../assets/handi_joystick3.png'];
-  constructor() {
+  carousel4Src = ['../../assets/handi_joystick1.png', '../../assets/handi_joystick1.png', '../../assets/handi_joystick3.png'];
+
+  constructor(private route: ActivatedRoute) {
   }
 
 
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      if (params.peripherique !== undefined) {
+        console.log(params);
+        this.activePeripherique = params.peripherique;
+      }
+    });
     this.displayedNavBar = false;
   }
 

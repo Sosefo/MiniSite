@@ -1,4 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-consoles',
@@ -15,16 +16,23 @@ export class ConsolesComponent implements OnInit {
 
   displayedNavBar: boolean;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {    this.route.queryParams.subscribe(params => {
+    if (params.console !== undefined) {
+      console.log(params);
+      this.activeConsole = params.console;
+      console.log(this.activeConsole);
+    }
+  }); }
 
   activeConsole = 1;
   carousel1Src = ['../../assets/accessibilite_ps4_1.PNG', '../../assets/accessibilite_ps4_2.PNG', '../../assets/accessibilite_xboxone.jpg'];
-  carousel1Labels = ["Différents paramètres d'accessibilité (PS4)" , 'Configuration des sous titres (PS4)',"Différents paramètres d'accessibilité (Xbox One)"];
+  carousel1Labels = ['Différents paramètres d\'accessibilité (PS4)' , 'Configuration des sous titres (PS4)', 'Différents paramètres d\'accessibilité (Xbox One)'];
   carouselAlt = [];
-  carousel2Src = ['../../assets/accessibilite_ps5.PNG','../../assets/accessibilite_xboxseriesx.jpg']
+  carousel2Src = ['../../assets/accessibilite_ps5.PNG', '../../assets/accessibilite_xboxseriesx.jpg'];
   carousel2Labels = ['Section transcription de chat (PS5)' , 'Indicateur tactiles des ports (Xbox Series X/S)'];
 
   ngOnInit(): void {
+
     this.displayedNavBar = false;
   }
 

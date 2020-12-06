@@ -16,7 +16,7 @@
   <button #navbarConsolesCollapse (click)="displayNav()" id="navbarConsolesCollapse" class="navbar-toggler" type="button" aria-controls="navbarConsoles" aria-expanded="false" aria-label="Toggle consoles navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="consoles" *ngIf="activeConsole === 1">
+  <div class="consoles" *ngIf="activeConsole == 1">
     <h1>L'arrivée de l'accessibilité numérique dans les consoles</h1>
     <div aria-hidden="true">
       <app-mycarousel [imagesSrc]="carousel1Src" [imagesText]="carouselAlt" [labels]="carousel1Labels"></app-mycarousel>
@@ -59,7 +59,7 @@
   </div>
 
 
-  <div class="consoles" *ngIf="activeConsole === 2">
+  <div class="consoles" *ngIf="activeConsole == 2">
     <h1>L'évolution de l'accessibilité numérique dans les consoles next-gen</h1>
     <div aria-hidden="true">
       <app-mycarousel [imagesSrc]="carousel2Src" [imagesText]="carouselAlt" [labels]="carousel2Labels"></app-mycarousel>

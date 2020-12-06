@@ -7,6 +7,7 @@ import { ConsolesComponent } from './consoles/consoles.component';
 import { JeuxComponent } from './jeux/jeux.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {PlanComponent} from './plan/plan.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path : 'peripheriques', component: PeripheriquesComponent},
   {path : 'recommandations', component: RessourcesComponent},
   {path : 'avis', component: AvisComponent},
-  {path: 'recommandations/type-recommandation', component : TypeRecommandationComponent}
+  {path: 'recommandations/type-recommandation', component : TypeRecommandationComponent},
+  {path: 'plan', component: PlanComponent}
 
 ];
 
