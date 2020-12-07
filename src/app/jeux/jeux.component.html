@@ -1,0 +1,203 @@
+<nav #navbarJeux id="navbarConsoles" class="sous-navigation" role="navigation" arial-label="Consoles filtres">
+  <div class="nav-content">
+    <ul class="navigation-list">
+      <li>
+        <button mat-button class="nav-button" (click)="jeuChange(1)">Paramétrage des touches</button>
+      </li>
+      <mat-divider></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="jeuChange(2)">Difficulté</button>
+      </li>
+      <mat-divider></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="jeuChange(3)">Paramètres visuels</button>
+      </li>
+      <mat-divider></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="jeuChange(4)">Paramètres audios</button>
+      </li>
+      <mat-divider></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="jeuChange(5)">Assistance</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="content">
+  <button #navbarJeuxCollapse (click)="displayNav()" id="navbarConsolesCollapse" class="navbar-toggler" type="button" aria-controls="navbarConsoles" aria-expanded="false" aria-label="Toggle consoles navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="jeux" *ngIf="activeJeu == 1">
+    <h1>Paramétrage des touches</h1>
+    <div class="main-text-image">
+      <img src="../../assets/parametrage_touches_TLOU2.jpg" alt="Ecran de configuration des touches de The Last Of Us 2"/>
+    </div>
+
+    <div class="main-text-content">
+      <p>
+        Dans un jeu, il est essentiel d'avoir la possibilité de paramétrer ses touches afin de rendre l'expérience de jeu la plus confortable possible.<br/>
+        Proposer des préconfigurations est judicieux afin d'accélérer le paramétrage,<br/> il est cependant nécessaire de disposer d'une configuration manuelle des touches rendre l'interaction avec le jeu plus accessible.<br/><br/>
+        De nos jours, ces principes ne sont pas forcéments appliqués. En effet, de nombreux jeux ne proposent qu'une modification parmis des préconfigurations, voire même aucune configuration possible.
+      </p>
+      <p>
+        <i>The Last Of Us 2</i> propose de nombreuses configurations au niveau des touches :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Reaffectation de toutes les touches de la manette possible</li>
+          <li>Préconfigurations disponibles (dont des configurations pour jouer à une main seulement)</li>
+          <li>Création de préconfigurations personnalisées</li>
+          <li>Possibilité de changer l'orientation de la manette lors de son utilisation</li>
+          <li>Changement du type d'interaction de certaines séquences du jeu (ex: appui repété ou appui maintenu)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="jeux" *ngIf="activeJeu == 2">
+    <h1>Difficulté du jeu</h1>
+    <div class="main-text-image">
+      <img src="../../assets/difficulte_TLOU2.jpg" alt="Ecran de configuration de la difficulté d'une partie de The Last Of Us 2: la difficulté se configure sur différents éléménts (joueur, enemis, alliés, ...)"/>
+    </div>
+
+    <div class="main-text-content">
+      <p>
+        Un jeu propose un certain défi à l'utilisateur, ce dernier peut être plus ou moins conséquent selon le type de jeu.<br/>
+        De ce fait, il est impératif de permettre à l'utilisateur de configurer la difficulté du jeu, en fonction du besoin qu'il recherche.<br/><br/>
+        Le choix de la difficulté est pratiquement omniprésent de nos jours dans le domaine du jeu vidéo.<br/>
+        Il y a également certains jeux qui proposent une personnalisation de la difficulté du jeu plus poussée<br/> en permettant à l'utilisateur de définir la difficulté de certains éléments du gameplay de manière distincte.
+      </p>
+
+      <p>
+        <i>The Last Of Us 2</i> permet une personnalisation en détails de la difficulté d'une partie :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Choix parmis des niveaux de difficultés globaux, ou un niveau de difficulté personnalisé</li>
+          <li>Personnalisation de la difficulté du joueur (dégâts subis, dégâts infligés)</li>
+          <li>Personnalisation de la difficulté des ennemis (réactivité, précision, niveau de l'IA)</li>
+          <li>Personnalisation de la difficulté des alliés (efficacité des alliés)</li>
+          <li>Personnalisation de la difficulté de la furtivité (niveau de détection par les enemis)</li>
+          <li>Personnalisation de la difficulté des ressources (rareté des ressources)</li>
+          <li>Personnalisation de l'accessibilité des combats (paramétrage détaillé du comportement des enemis en combat)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="jeux" *ngIf="activeJeu == 3">
+    <h1>Configurations visuelles</h1>
+    <div>
+      <app-mycarousel class="app" [imagesSrc]="carouselSrc" [imagesText]="carouselAlt"></app-mycarousel>
+
+    </div>
+
+    <div class="main-text-content">
+      <p>
+        La possibilité de paramétrer les paramètres visuels d'un jeu est un facteur essentiel à prendre en compte en termes d'accessibilité.<br/>
+        En effet, cette configuration permet par exemple aux personnes mal voyantes d'améliorer leur lisibilité du jeu et donc, leur confort.<br/><br/>
+        De manière générale, la plupart des jeux permettent des configurations similaires (luminosité, contraste du jeu, taille de l'interface, ...).<br/>
+        Cependant, certains jeux proposent des configurations encore plus spécifiques.<br/>
+      </p>
+      <p>
+        C'est le cas de <i>The Last Of Us 2</i> qui qui dispose de configurations visuelles inédites :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Affichage contraste élevé pour mettre en évidence les joueurs, objets et enemis, et atténuer les décors (cf images au dessus)</li>
+          <li>Mode daltonien (change les couleurs de l'interface de jeu)</li>
+          <li>Loupe d'écran pour agrandir une partie de l'écran</li>
+          <li>Modification de l'intensité des secousses de la caméra pour plus de confort</li>
+          <li>Configuration du champ de vision (élargissement ou rétécissement)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="jeux" *ngIf="activeJeu == 4">
+    <h1>Paramètres audios et sous-titres</h1>
+    <div class="main-text-video">
+      <span>Vidéo sur les sous titres dans <i>The Last Of Us 2</i></span>
+      <p>
+        Le jeu propose une configuration des sous titres assez détaillée qui permet<br/>
+        de configurer la taille des sous-titres, la couleur de fond, et également la couleur du texte, et du nom du personnage.
+      </p>
+      <div>
+        <iframe [src] = safeURL></iframe>
+        <mat-expansion-panel (opened)="transcriptionPanelOpen = true" (closed)="transcriptionPanelOpen = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <b>{{transcriptionPanelOpen ? "Fermer " : "Lire "}} la transcription</b>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p><b>Male WLF Soldier:</b> This is dumb, we should be pushing in.</p>
+          <p><b>Female WLF Soldier:</b> We hold the perimeter until we hear otherwise. Keep an eye out in case he come this way.</p>
+          <p>Dog barking</p>
+          <p><b>Male WLF Soldier:</b> I got something !</p>
+          <p><b>Ellie:</b> Shit !</p>
+          <p><b>Female WLF Soldier:</b> Infected ?</p>
+          <p><b>Male WLF Soldier:</b> Lets get in there.</p>
+        </mat-expansion-panel>
+      </div>
+    </div>
+
+    <div class="main-text-content">
+      <p>
+        Un point important dans le confort de jeu est le son, en effet il est indispensable pour un utilisateur de pouvoir paramétrer l'audio de son jeu.<br/>
+        Cela permet par exemple à des personnes ayant des problèmes d'audition d'augmenter le son du jeu afin de mieux entendre.<br/>
+        Dans la majorité des jeux, il est possible de configurer l'audio de manière précise (son des voix, son de la musique, son des bruits, ...).<br/><br/>
+        La possibilité d'ajouter des sous titres est également un élément important du paramétrage du son.<br/>
+        Les sous titres permettent à la fois de visualiser ce que disent les personnages, mais servent également de traduction dans le cas ou la voix est dans une langue que l'utilisateur ne maîtrise pas.
+      </p>
+      <p>
+        <i>The Last Of Us 2</i> dispose d'une configuration audio complète avec une personnalisation des sous titres rendant l'expérience de jeu bien plus accessible :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Configuration de l'audio détaillée (effets, dialogues, musique, ...)</li>
+          <li>Ajouts de sous-titres possible</li>
+          <li>Taille des sous titres paramétrable</li>
+          <li>Possibilité de changer les couleurs des sous titres (couleur de fond, couleur du texte, couleur en fonction du nom du personnage)</li>
+          <li>Synthèse vocale pour lire le texte affiché à l'écran et du statut actuel du joueur (santé, munitions, ...)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="jeux" *ngIf="activeJeu == 5">
+    <h1>Assistance dans le jeu</h1>
+    <div class="main-text-image">
+      <img src="../../assets/assistance_TLOU2.jpg" alt="Assistance de navigation dans The Last Of Us 2: Un curseur indique au joueur la direction à prendre"/>
+    </div>
+
+    <div class="main-text-content">
+      <p>
+        De nos jours, les jeux sont de plus en plus complexes, et cela peu engendrer souvent des difficultés de prise en main par les utilisateurs.<br/>
+        C'est pourquoi, l'ajout de configurations pour assister le joueur dans sa partie peut être assez pratique pour rendre l'expérience de jeu plus confortable.<br/>
+        Ces assitances peuvent être diverses, indices pour le joueur lorsque ce dernier est bloqué, certaines phases se jouent automatiquement sans interaction de l'utilisateur, ...
+      </p>
+      <p>
+        Dans <i>The Last Of Us 2</i>, on trouve plusieurs paramètres d'assistance :
+      </p>
+
+      <div class="main-text-properties">
+        <ul>
+          <li>Assistance de navigation (permet d'une pression de touche d'orienter le joueur vers la bonne direction avec une flèche comme indicateur</li>
+          <li>Commandes de parcours simplifiées (escalade automatique, obstacles franchis automatiquements, ...)</li>
+          <li>Déplacements à proximité de rebords sécurisés pour éviter une chute</li>
+          <li>Respiration infinie, permettant de nager sous l'eau sans limite de temps</li>
+          <li>Affichage d'indices lors d'énigmes, voire possibilité de passer l'énigme</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

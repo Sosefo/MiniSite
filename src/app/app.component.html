@@ -1,0 +1,72 @@
+<!-- Lien d evitement -->
+<a  class="evitement" href="javascript:void(0);" (click)='skipToMainContent()'>Aller au contenu</a>
+
+<!-- Toolbar -->
+<header role="banner">
+  <nav role="navigation" class="toolbar navbar navbar-dark navbar-expand-lg" aria-label="Menu de navigation">
+    <a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">
+      <img
+      width="40"
+      alt="Logo accessibilité (retour à l'accueil)"
+      src="../assets/logo.png"
+      id="logo"
+      />
+      <span id="titre">{{title}}</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-list">
+        <li>
+          <a class="nav-link" routerLinkActive="active" aria-label="Page d'accueil" routerLink="/accueil">
+          Accueil
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" routerLinkActive="active"  aria-label="Accessibilité des périphériques" routerLink="/peripheriques">
+          Périphériques
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" routerLinkActive="active" aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
+          Consoles
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" routerLinkActive="active" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
+          Jeux
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" routerLinkActive="active" aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
+          Recommandations
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" routerLinkActive="active" routerLink="/avis">
+          Donnez nous votre avis !
+        </a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="content" role="main">
+  <a id="contenu" aria-hidden="true" #content tabindex="-1"></a>
+<router-outlet></router-outlet>
+</main>
+
+<footer role="contentinfo" class="fixed-bottom">
+
+  <div class="footer-bottom">
+    <ul class="footer-list">
+      <li><a routerLink="/plan" class="menu-item">Plan du site</a> </li>
+      <li><a routerLink="/accessibilité">Accessibilité</a> </li>
+    </ul>
+  </div>
+
+</footer>

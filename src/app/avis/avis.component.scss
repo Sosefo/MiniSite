@@ -1,0 +1,98 @@
+:host {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (max-width: 475px) {
+  #confirmation-message {
+    margin: auto 30px !important;
+  }
+}
+
+@media all and (max-width: 595px) {
+   #avisCard {
+     margin: 15px;
+   }
+
+  .mobile-line-break {
+    display: block !important;
+  }
+}
+
+#accessibilite {
+  margin-top: 10px;
+}
+
+.mobile-line-break {
+  display: none;
+}
+
+.radio{
+  margin-top:10px;
+  display: inline-block;
+}
+
+.card-header{
+  font-size: 1.2rem;
+  color : #8b0ead;
+  text-align: center;
+}
+
+.champ-title{
+  font-size: 1rem;
+}
+
+.card{
+  width: 35rem;
+  margin : auto auto auto auto;
+}
+
+.submit{
+  margin-top:40px;
+}
+
+form{
+  text-align: center;
+}
+
+.label{
+  display: inline;
+  margin-right: 10px;
+}
+
+::ng-deep .mat-radio-label-content{
+  padding-left: 2px !important;
+}
+
+.errors{
+  color : red;
+}
+
+.hidden{
+  display : none !important;
+}
+
+.message-text{
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+#confirmation-message{
+  margin: auto auto auto auto;
+  text-align: center;
+}
+
+.confirm-button{
+  font-size: 1.1rem;
+}
+
+.avis-button {
+  color: #fff;
+  background-color: #8b0ead;
+  border-color: #8b0ead;
+}
+
+.avis-button:focus {
+  box-shadow: 0 0 0 0.2rem #8b0eada3
+}

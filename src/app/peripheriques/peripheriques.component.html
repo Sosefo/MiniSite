@@ -1,0 +1,179 @@
+<nav #navbarPeripheriques  class="sous-navigation" role="navigation" aria-label="Periphériques filtres">
+
+  <div class="nav-content">
+    <ul class="navigation-list">
+      <li>
+        <button mat-button class="nav-button" (click)="peripheriqueChange(1);">Manette Ps4 pour un usage <br/> à une seule main</button>
+      </li>
+      <mat-divider aria-hidden="true"></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="peripheriqueChange(2);">Xbox adaptive controller</button>
+      </li>
+      <mat-divider aria-hidden="true"></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="peripheriqueChange(3);">Adaptive Gaming Kit</button>
+      </li>
+      <mat-divider aria-hidden="true"></mat-divider>
+      <li>
+        <button mat-button class="nav-button" (click)="peripheriqueChange(4);">Handi Joystick</button>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+<section class="content">
+  <button #navbarPeripheriquesCollapse (click)="displayNav()" id="navbarConsolesCollapse" class="navbar-toggler" type="button" aria-controls="navbarConsoles" aria-expanded="false" aria-label="Toggle consoles navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="peripherique" *ngIf="activePeripherique == 1">
+    <h1>Manette Ps4 pour un usage à une seule main (gauche)</h1>
+
+    <div aria-hidden="true">
+      <app-mycarousel [imagesSrc]="carousel1Src" [imagesText]="carouselText"></app-mycarousel>
+    </div>
+    <div class="main-text-content">
+        <p>La société HitClic créée en 2019 par David Combarieu et Théo Jordan,
+          développe des solutions sur mesure à l’utilisation des différents périphériques de jeu
+          pour les personnes à mobilité réduite. Ce projet est né suite à un accident en 2011 qui a rendu Théo Jordan
+          tétraplégique partiel. En effet, il ne pouvait plus utiliser ses mains ce qui rendait l'utilisation des manettes
+          difficiles. Le projet Handigamer est donc né en 2017, il avait pour but d'adapter des périphériques existants pour les personnes à mobilité réduite. Aujourd'hui
+          elle a evolué pour devenir la société Hitclic et propose en plus de la conception de matériel.
+          L'objectif principale de la société est de soutenir les activités de l'association en apportant une contribution matérielle.
+        </p>
+        <p>
+          Parmi les périphériques déjà developpés par l'entreprise, on
+          y trouve une adaptation d'une manette <b>PS4</b> pour un usage exclusif à une seule main ( ici main gauche )
+        </p>
+        <p>
+          Voici les adapaptations par rapport à une manette de <b>PS4</b> classique :
+        </p>
+
+          <div class="main-text-properties">
+            <ul>
+              <li> Les 4 boutons de jeu sont reportés sous la poignée gauche </li>
+              <li> Les boutons R1 et R2 sont reportés sur le dessus </li>
+              <li> Le joystick droit est reporté sous la manette pour l'utiliser à l'aide d'appui sur le genou</li>
+            </ul>
+          </div>
+    </div>
+  </div>
+
+
+
+  <div class="peripherique" *ngIf="activePeripherique == 2">
+    <h1>Xbox adaptive controller</h1>
+
+    <div aria-hidden="true">
+      <app-mycarousel [imagesSrc]="carousel2Src" [imagesText]="carouselText"></app-mycarousel>
+    </div>
+    <div class="main-text-content">
+        <p>
+          Microsoft lance en 2018 une manette accessible aux personnes à mobilité réduite appelée  "Xbox adaptive controller" . Cette manette seule
+          est limitée et possède seulement deux boutons A et B, des touches directionnelles et des touches secondaires.
+          Elle peut être utilisée comme une manette à part entière ou en tant qu'extension d'une manette classique grâce au mode "Copilote" qui
+          répartit les touches sur les deux manettes. Ce mode est notamment utile pour les personnes à mobilité réduite. En effet, cela permet de partager
+          les contrôles avec un autre joueur par exemple.
+
+          De plus elle est entièrement configurable à l'aide de l'application "Accessoires Xbox".
+          <br/>
+        </p>
+        <p>
+          Cette manette est compatible avec les consoles <b>Xbox</b> et les systèmes Windows 10 mais la volonté de Microsoft est de l'étendre
+          à tout les systèmes.
+          <br/>
+          Aujourd'hui, elle intègre également des fonctionnalités comme la reconnaissance vocale, la reconnaissance écrite ainsi que l'intégration d'un narrateur
+          pour aider un plus grand nombre de joueurs.
+        </p>
+        <p>
+
+          Voici les caractéristiques de cette manette :
+
+        </p>
+
+          <div class="main-text-properties">
+            <ul>
+              <li> Seule, possède 2 touches A et B, des touches directionnelles et 2 touches secondaires</li>
+              <li> Configuration selon des profils personnalisés via l'application "Accessoires Xbox" </li>
+              <li> Fonctionne comme un Hub pour permettre d'avoir une expérience totalement personnalisée </li>
+              <li> Possède 19 prises Jack et 2 ports USB pour y connecter une multitude de périphériques externes (boutons, joysticks,...) </li>
+            </ul>
+          </div>
+    </div>
+  </div>
+
+
+  <div class="peripherique" *ngIf="activePeripherique == 3">
+    <h1>Adaptive Gaming Kit</h1>
+
+    <div aria-hidden="true">
+      <app-mycarousel [imagesSrc]="carousel3Src" [imagesText]="carouselText"></app-mycarousel>
+    </div>
+    <div class="main-text-content">
+        <p>
+          Logitech a développé en 2019, un kit d’accessoires complémentaire à la manette adaptative Xbox.
+          <br/>
+          Ces accessoires se connectent directement sur la manette Xbox Adaptive Controller pour ainsi permettre aux joueurs
+          de bénéficier d'avantages de fonctionnalités et de flexibilité de jeu. Ce kit permet d'adapter la manette aux différents handicaps
+          possibles.
+
+        </p>
+        <p>
+
+          Voici la composition du kit :
+
+        </p>
+
+          <div class="main-text-properties">
+            <ul>
+              <li> Ensemble de 12 boutons et gâchettes de types et tailles différentes permettant une grande flexibilité de jeu. </li>
+              <li> Tapis de jeu configurables </li>
+              <li> Etiquettes personnalisables </li>
+              <li> Dragonnes en velcro </li>
+            </ul>
+          </div>
+    </div>
+  </div>
+
+
+  <div class="peripherique" *ngIf="activePeripherique == 4">
+    <h1>Handi Joystick</h1>
+
+    <div aria-hidden="true">
+      <app-mycarousel [imagesSrc]="carousel4Src" [imagesText]="carouselText"></app-mycarousel>
+    </div>
+    <div class="main-text-content">
+        <p>
+          L’entreprise française Bluelinea spécialisée dans la domotique d’assistance aux personnes dépendantes a développé une manette utilisable avec la bouche. Seule, elle est compatible avec les consoles <b>PlayStation, Switch et PC</b>.
+          Il peut être utilisé avec n'importes quels types de jeux (Sport,musique,course,jeu de rôle,...).
+          <br/>
+        </p>
+
+        <p>
+          Cette manette convertit les signaux de souffle et d'aspiration en action qui permettent d'interagir avec le jeu ainsi que
+          des retours auditif et visuel pour la validation d'une commande. On peut également y branches des accessoires supplémentaires
+          telles ques des joysticks.
+          Cependant cette manette doit être obligatoirement fixée sur un support rigide.
+          <br/>
+        </p>
+        <p>
+          Voici les caractéristiques de la manette Handi Joystick :
+        </p>
+
+          <div class="main-text-properties">
+            <ul>
+              <li> Elle est fixée sur un axe qui réagit avec les mouvements de bouche et de tête exactement de la même manière qu’un joystick </li>
+              <li> Elle possède 4 capteurs réagissant aux aspirations et expirations </li>
+              <li> Ele possède un bouton pour la lèvre inférieure </li>
+              <li> Il est possible d'éffectuer 24 à 32 combinaisons de souffles/aspirations</li>
+            </ul>
+          </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+

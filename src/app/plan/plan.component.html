@@ -1,0 +1,52 @@
+<section class="content">
+  <h1>Plan du site</h1>
+  <div class="container-fluid content">
+    <div class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h2 class="card-title">Périphériques</h2>
+        <ul>
+          <li class="link-container"><a [routerLink]="['/peripheriques']" [queryParams]="{ peripherique: 1 }">Manette PS4 pour une seule main</a></li>
+          <li class="link-container"><a [routerLink]="['/peripheriques']" [queryParams]="{ peripherique: 2 }">Xbox Adaptive controller</a></li>
+          <li class="link-container"><a [routerLink]="['/peripheriques']" [queryParams]="{ peripherique: 3 }">Adaptive gaming kit</a></li>
+          <li class="link-container"><a [routerLink]="['/peripheriques']" [queryParams]="{ peripherique: 4 }">Handi Joystick</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h2 class="card-title">Consoles</h2>
+        <ul>
+          <li class="link-container"><a [routerLink]="['/consoles']" [queryParams]="{ console: 1 }">Débuts de l'accessibilité dans les consoles</a></li>
+          <li class="link-container"><a [routerLink]="['/consoles']" [queryParams]="{ console: 2 }">L'accessibilité dans la next-gen</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h2 class="card-title">Jeux</h2>
+        <ul>
+          <li class="link-container"><a [routerLink]="['/jeux']" [queryParams]="{ jeu: 1 }">Paramétrage des touches</a></li>
+          <li class="link-container"><a [routerLink]="['/jeux']" [queryParams]="{ jeu: 2 }">Difficulté</a></li>
+          <li class="link-container"><a [routerLink]="['/jeux']" [queryParams]="{ jeu: 3 }">Paramètres visuels</a></li>
+          <li class="link-container"><a [routerLink]="['/jeux']" [queryParams]="{ jeu: 4 }">Paramètres audios</a></li>
+          <li class="link-container"><a [routerLink]="['/jeux']" [queryParams]="{ jeu: 5 }">Assistance</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h2 class="card-title">Recommandation</h2>
+        <ul>
+          <li class="link-container"><a [routerLink]="['/recommandations/type-recommandation']" [queryParams]="{ type: 'Général' }">Général</a></li>
+          <li class="link-container"><a [routerLink]="['/recommandations/type-recommandation']" [queryParams]="{ type: 'Moteur' }">Moteur</a></li>
+          <li class="link-container"><a [routerLink]="['/recommandations/type-recommandation']" [queryParams]="{ type: 'Cognitive' }">Cognitive</a></li>
+          <li class="link-container"><a [routerLink]="['/recommandations/type-recommandation']" [queryParams]="{ type: 'Vision' }">Vision</a></li>
+          <li class="link-container"><a [routerLink]="['/recommandations/type-recommandation']" [queryParams]="{ type: 'Son' }">Son</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,112 @@
+@media all and (max-width: 420px) {
+  ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media all and (min-width: 421px) {
+  ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  /* Carousel */
+  :host ::ng-deep .slide{
+    width: 100% !important;
+  }
+
+  .carousel-caption {
+    display: block !important;
+  }
+  /**/
+}
+
+
+@media all and (min-width: 992px) {
+  .sous-navigation {
+    width: 18% !important;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+img{
+  height: 95%;
+}
+
+:host ::ng-deep .slide{
+  display: flex;
+}
+
+::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
+
+  background-color: #8b0ead;
+  width: 30px;
+  height: 30px;
+}
+
+::ng-deep .carousel-control-prev{
+  order: 0;
+  position: initial;
+}
+::ng-deep .carousel-control-next{
+  order: 2;
+  position: initial;
+}
+
+.carousel-indicators {
+  position: relative;
+  margin : 0;
+}
+
+.carousel-indicators li{
+  height: 4px;
+  background-color: #8b0ead;
+}
+
+::ng-deep .carousel {
+  margin-top: 25px;
+}
+
+::ng-deep .carousel-inner {
+  order: 1;
+}
+
+::ng-deep carousel > div {
+  margin: auto;
+}
+
+
+.carousel-caption {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  color: #333333;
+}
+
+.carousel-caption p {
+  margin: 0.5rem 0;
+}
+
+.carousel-bottom{
+ text-align: center;
+ margin-bottom: 15px;
+}
+
+.button , img{
+  outline: none !important;
+}
+
+
+
+
+
+
