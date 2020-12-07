@@ -3,7 +3,7 @@
 
 <!-- Toolbar -->
 <header role="banner">
-  <nav role="navigation" arial-label="Menu de navigation" class="toolbar navbar navbar-dark navbar-expand-lg">
+  <nav role="navigation" class="toolbar navbar navbar-dark navbar-expand-lg" aria-label="Menu de navigation">
     <a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">
       <img
       width="40"
@@ -18,46 +18,41 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-      <span>
-        <a class="nav-link" routerLinkActive="active" aria-label="Page d'accueil" routerLink="/accueil">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-list">
+        <li>
+          <a class="nav-link" routerLinkActive="active" aria-label="Page d'accueil" routerLink="/accueil">
           Accueil
         </a>
-      </span>
-      <span>
-        <a class="nav-link" routerLinkActive="active"  aria-label="Accessibilité des périphériques de jeux" routerLink="/peripheriques">
+      </li>
+      <li>
+        <a class="nav-link" routerLinkActive="active"  aria-label="Accessibilité des périphériques" routerLink="/peripheriques">
           Périphériques
         </a>
-      </span>
-      <hr/>
-      <span>
+      </li>
+      <li>
         <a class="nav-link" routerLinkActive="active" aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
           Consoles
         </a>
-      </span>
-      <hr/>
-      <span>
+      </li>
+      <li>
         <a class="nav-link" routerLinkActive="active" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
           Jeux
         </a>
-      </span>
-      <hr/>
-      <span>
+      </li>
+      <li>
         <a class="nav-link" routerLinkActive="active" aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
           Recommandations
         </a>
-      </span>
-      <hr/>
-      <span>
+      </li>
+      <li>
         <a class="nav-link" routerLinkActive="active" routerLink="/avis">
           Donnez nous votre avis !
         </a>
-      </span>
+      </li>
+    </ul>
     </div>
   </nav>
-
-
-
 </header>
 
 <main class="content" role="main">
@@ -68,7 +63,7 @@
 <footer role="contentinfo" class="fixed-bottom">
 
   <div class="footer-bottom">
-    <ul>
+    <ul class="footer-list">
       <li><a routerLink="/plan" class="menu-item">Plan du site</a> </li>
       <li><a routerLink="/accessibilité">Accessibilité</a> </li>
     </ul>

@@ -31,6 +31,13 @@
   /**/
 }
 
+@media all and (min-width: 992px){
+
+  .navbar-list{
+    display: flex;
+  }
+}
+
 @media all and (min-width: 992px) and (max-width: 1205px){
   /* Header */
   #titre {
@@ -40,6 +47,7 @@
   #navbarSupportedContent a {
     margin-right: 0;
   }
+
   /**/
 }
 
@@ -177,14 +185,22 @@ footer a {
 }
 /**/
 
-ul{
+.footer-list{
   text-align: center;
   list-style: none;
   font-size: 0.88rem;
 }
 
-li a {
+.footer-list li a {
   display: inline;
+}
+
+.navbar-list{
+  list-style: none;
+}
+
+.navbar-list li a {
+  margin-right: 10px;
 }
 
 a,

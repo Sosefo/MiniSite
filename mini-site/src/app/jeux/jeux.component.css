@@ -123,19 +123,10 @@
   margin-left: 20px;
 }
 
-.nav-button:focus{
-  outline : none;
-}
-
-
 .navbar-toggler {
   background-color: #333333;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
-}
-
-.navbar-toggler:focus {
-  outline: none;
 }
 
 .navbar-toggler span {
