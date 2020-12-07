@@ -40,7 +40,7 @@ export class JeuxComponent implements OnInit {
   displayNav(): void {
     this.displayedNavBar = !this.displayedNavBar;
     if (this.displayedNavBar) {
-      this.navbarJeux.nativeElement.setAttribute('style', 'width: 75%; flex: none;');
+      this.navbarJeux.nativeElement.setAttribute('style', 'width: 75%; flex: none; display:block;');
     } else {
       this.navbarJeux.nativeElement.setAttribute('style', '');
     }

@@ -2,20 +2,19 @@
 <a  class="evitement" href="javascript:void(0);" (click)='skipToMainContent()'>Aller au contenu</a>
 
 <!-- Toolbar -->
-<header role="banner" >
+<header role="banner">
   <nav role="navigation" arial-label="Menu de navigation" class="toolbar navbar navbar-dark navbar-expand-lg">
-    <a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">    <img
+    <a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">
+      <img
       width="40"
       alt="Logo accessibilité (retour à l'accueil)"
       src="../assets/logo.png"
       id="logo"
-      /></a>
+      />
+      <span id="titre">{{title}}</span>
+    </a>
 
-
-    <span id="titre"><a class="accueil-link" aria-label="Retour à l'accueil" routerLink="/accueil">{{title}}</a>
-      </span>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 

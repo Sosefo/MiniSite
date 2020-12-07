@@ -19,7 +19,6 @@
   h1 {
     margin: 15px 10px;
     font-size: 25px;
-    text-align: center;
   }
 
   h2 {
@@ -59,4 +58,7 @@ section {
 
 h2 {
   align-self: center;
+}
+h1{
+  text-align: center;
 }

@@ -45,9 +45,9 @@ export class PeripheriquesComponent implements OnInit{
   displayNav(): void {
     this.displayedNavBar = !this.displayedNavBar;
     if (this.displayedNavBar) {
-      this.navbarConsoles.nativeElement.setAttribute('style', 'width: 75%; flex: none;');
+      this.navbarConsoles.nativeElement.setAttribute('style', 'width: 75%; flex: none; display:block;');
     } else {
-      this.navbarConsoles.nativeElement.setAttribute('style', '');
+      this.navbarConsoles.nativeElement.setAttribute('style', 'display:none');
     }
   }
 

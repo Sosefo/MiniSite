@@ -69,6 +69,8 @@ p {
 .evitement {
   position: absolute;
   left: -99999px;
+  margin: 5px;
+  width: 7%;
 }
 
 .evitement:focus {
