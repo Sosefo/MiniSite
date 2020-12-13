@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {ActivatedRoute} from '@angular/router';
+import { AppComponent } from '../app.component';
 
 
 @Component({
@@ -27,12 +29,13 @@ export class PeripheriquesComponent implements OnInit{
 
   carousel4Src = ['assets/handi_joystick1.png', 'assets/handi_joystick1.png', 'assets/handi_joystick3.png'];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,private titleService:Title) {
   }
 
 
 
   ngOnInit(): void {
+    this.titleService.setTitle(AppComponent.docTitle + "Accessibilité dans les périphériques");
     this.route.queryParams.subscribe(params => {
       if (params.peripherique !== undefined) {
         console.log(params);

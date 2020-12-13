@@ -11,7 +11,6 @@ import { RessourcesComponent } from './ressources/ressources.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PeripheriquesComponent } from './peripheriques/peripheriques.component';
-import { PlanDuSiteComponent } from './plan-du-site/plan-du-site.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import { AvisComponent } from './avis/avis.component';
@@ -33,13 +32,12 @@ import { SourcesComponent } from './sources/sources.component';
     ConsolesComponent,
     RessourcesComponent,
     PeripheriquesComponent,
-    PlanDuSiteComponent,
     AvisComponent,
-      TypeRecommandationComponent,
-      TypeRecommandationComponent,
-      MycarouselComponent,
-      PlanComponent,
-      SourcesComponent
+    TypeRecommandationComponent,
+    TypeRecommandationComponent,
+    MycarouselComponent,
+    PlanComponent,
+    SourcesComponent
    ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {ActivatedRoute} from '@angular/router';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-consoles',
@@ -16,11 +18,9 @@ export class ConsolesComponent implements OnInit {
 
   displayedNavBar: boolean;
 
-  constructor(private route: ActivatedRoute) {    this.route.queryParams.subscribe(params => {
+  constructor(private route: ActivatedRoute,private titleService:Title) {    this.route.queryParams.subscribe(params => {
     if (params.console !== undefined) {
-      console.log(params);
       this.activeConsole = params.console;
-      console.log(this.activeConsole);
     }
   }); }
 
@@ -32,7 +32,7 @@ export class ConsolesComponent implements OnInit {
   carousel2Labels = ['Section transcription de chat (PS5)' , 'Indicateur tactiles des ports (Xbox Series X/S)'];
 
   ngOnInit(): void {
-
+    this.titleService.setTitle(AppComponent.docTitle + "Accessibilité dans les consoles");
     this.displayedNavBar = false;
   }
 

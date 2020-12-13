@@ -1,4 +1,6 @@
+import { AppComponent } from './../app.component';
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-acceuil',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcceuilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService:Title) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(AppComponent.docTitle + "Acceuil");
   }
 
 }

@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser';
+import {DomSanitizer, Title} from '@angular/platform-browser';
 import {ActivatedRoute} from '@angular/router';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-jeux',
@@ -20,7 +21,7 @@ export class JeuxComponent implements OnInit {
   carouselSrc = ['assets/visuel1_TLOU2.png', 'assets/visuel2_TLOU2.png', 'assets/visuel3_TLOU2.png', 'assets/visuel4_TLOU2.png'];
   carouselAlt = ['Affichage par défaut dans The Last of Us 2', 'Affichage numéro 1 dans The Last of Us 2 : (Alliés en vert)', 'Affichage numéro 2 dans The Last of Us 2 : (Alliés en bleu)', 'Affichage numéro 3 dans The Last of Us 2 : (Alliés en bleu, enemis en rouge)'];
 
-  constructor(private sanitizer: DomSanitizer, private route: ActivatedRoute) {
+  constructor(private sanitizer: DomSanitizer, private route: ActivatedRoute,private titleService:Title) {
     this.safeURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/zssOx81k768');
   }
 
@@ -29,6 +30,7 @@ export class JeuxComponent implements OnInit {
   transcriptionPanelOpen = false;
 
   ngOnInit(): void {
+    this.titleService.setTitle(AppComponent.docTitle + "Accessibilité dans les jeux");
     this.route.queryParams.subscribe(params => {
       if (params.jeu !== undefined) {
         this.activeJeu = params.jeu;

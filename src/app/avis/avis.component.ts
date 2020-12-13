@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-avis',
@@ -20,10 +22,11 @@ export class AvisComponent implements OnInit {
   @ViewChild('formCard')
   formCard: ElementRef;
 
-  constructor() {
+  constructor(private titleService:Title) {
   }
 
   ngOnInit() {
+    this.titleService.setTitle(AppComponent.docTitle + "Donnez nous notre avis !");
     this.designNoteError = false;
     this.accessibilityNoteError = false;
   }
