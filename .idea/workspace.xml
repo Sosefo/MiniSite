@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c9621006-fd3e-4447-8ec6-6add867bc9cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/acceuil/acceuil.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/acceuil/acceuil.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/avis/avis.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/avis/avis.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/consoles/consoles.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/consoles/consoles.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/plan/plan.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/plan/plan.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ressources/ressources.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ressources/ressources.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +57,7 @@
       <workItem from="1607368051671" duration="1637000" />
       <workItem from="1607369725825" duration="4764000" />
       <workItem from="1607410245475" duration="120000" />
+      <workItem from="1607868141356" duration="2337000" />
     </task>
     <servers />
   </component>

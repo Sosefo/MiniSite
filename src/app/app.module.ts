@@ -22,6 +22,7 @@ import { TypeRecommandationComponent } from './type-recommandation/type-recomman
 import { MycarouselComponent } from './mycarousel/mycarousel.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { PlanComponent } from './plan/plan.component';
+import { SourcesComponent } from './sources/sources.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { PlanComponent } from './plan/plan.component';
       TypeRecommandationComponent,
       TypeRecommandationComponent,
       MycarouselComponent,
-      PlanComponent
+      PlanComponent,
+      SourcesComponent
    ],
   imports: [
     BrowserModule,
