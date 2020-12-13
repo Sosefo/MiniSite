@@ -10,7 +10,7 @@
   height: 100%;
 }
 
-@media all and (max-width: 992px){
+@media all and (max-width: 62rem){
   /* Header */
   #logo {
     margin-right: 0 !important;
@@ -31,14 +31,14 @@
   /**/
 }
 
-@media all and (min-width: 992px){
+@media all and (min-width: 62rem){
 
   .navbar-list{
     display: flex;
   }
 }
 
-@media all and (min-width: 992px) and (max-width: 1205px){
+@media all and (min-width: 62rem) and (max-width: 75.3rem){
   /* Header */
   #titre {
     max-width: 20%;
@@ -51,7 +51,7 @@
   /**/
 }
 
-@media all and (max-width: 1205px){
+@media all and (max-width: 75.3rem){
   /* Header */
   #logo {
     margin-left: 0 !important;

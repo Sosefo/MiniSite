@@ -10,7 +10,7 @@
 }
 
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 62rem) {
   .sous-navigation {
     transition: 0.3s;
     width: 0;
@@ -39,7 +39,7 @@
   }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 62rem) {
   .sous-navigation {
     width: 18% !important;
   }

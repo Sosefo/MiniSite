@@ -5,19 +5,19 @@
   height: 100%;
 }
 
-@media all and (max-width: 421px) {
+@media all and (max-width: 26.3rem) {
   img{
     width: 95%;
   }
 }
 
-@media all and (min-width: 422px) {
+@media all and (min-width: 26.4rem) {
   img{
     width: 70%;
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 62rem) {
   .recommandation-content {
     width: 100%;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 62rem) {
   .recommandation-content {
     width: 50%;
     margin : 0 auto;

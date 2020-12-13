@@ -5,9 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/acceuil/acceuil.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/acceuil/acceuil.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/avis/avis.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/avis/avis.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/consoles/consoles.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/consoles/consoles.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/plan/plan.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/plan/plan.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/ressources/ressources.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ressources/ressources.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.scss" afterDir="false" />
     </list>

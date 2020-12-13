@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 26.3rem) {
   img {
     width: 100%;
   }
@@ -15,7 +15,7 @@
   }
 }
 
-@media all and (min-width: 421px) and (max-width: 992px) {
+@media all and (min-width: 26.3rem) and (max-width: 62rem) {
   img {
     width: 75%;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 62rem) {
   .sous-navigation {
     transition: 0.3s;
     width: 0;
@@ -72,7 +72,7 @@
   }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 62rem) {
   .sous-navigation {
     width: 18% !important;
   }

@@ -1,18 +1,18 @@
-@media all and (max-width: 420px) {
+@media all and (max-width: 26.2rem) {
   ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
     width: 20px;
     height: 20px;
   }
 }
 
-@media all and (min-width: 421px) {
+@media all and (min-width: 26.3rem) {
   ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
     width: 30px;
     height: 30px;
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 62rem) {
   /* Carousel */
   :host ::ng-deep .slide{
     width: 100% !important;
@@ -25,7 +25,7 @@
 }
 
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 62rem) {
   .sous-navigation {
     width: 18% !important;
   }

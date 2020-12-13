@@ -13,13 +13,13 @@ a{
   flex: auto;
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 62rem) {
   h1 {
     font-size: 1.5rem;
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 4rem) {
   h1 {
     text-align: center;
   }

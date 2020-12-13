@@ -3,19 +3,19 @@
   height: 100%;
 }
 
-@media all and (max-width: 421px) {
+@media all and (max-width: 26.3rem) {
   section {
     margin: 0 5%;
   }
 }
 
-@media all and (min-width: 422px) and (max-width: 991px) {
+@media all and (min-width: 26.4rem) and (max-width: 61.9rem) {
   section {
     margin: 0 15%;
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 62rem) {
   h1 {
     margin: 15px 10px;
     font-size: 1.5rem;
@@ -31,7 +31,7 @@
   }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 62rem) {
   section {
     margin: 0 5%;
   }
