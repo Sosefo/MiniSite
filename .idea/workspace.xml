@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c9621006-fd3e-4447-8ec6-6add867bc9cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/consoles/consoles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/consoles/consoles.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/acceuil/acceuil.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/acceuil/acceuil.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/consoles/consoles.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/consoles/consoles.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/peripheriques/peripheriques.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ressources/ressources.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ressources/ressources.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/type-recommandation/type-recommandation.component.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
