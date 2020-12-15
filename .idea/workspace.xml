@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9621006-fd3e-4447-8ec6-6add867bc9cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/chevron-pointing-to-the-left-hover.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/chevron-pointing-to-the-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/right-chevron-hover.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/right-chevron.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/consoles/consoles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/consoles/consoles.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/jeux/jeux.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/jeux/jeux.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +22,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -30,6 +31,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\Users\Ludovic GILLOT\Travail\Metz\M2\Accessibilite Numerique\MiniSite\MiniSite\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Ludovic GILLOT\Travail\Metz\M2\Accessibilite Numerique\MiniSite\MiniSite\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Ludovic GILLOT\Travail\Metz\M2\Accessibilite Numerique\MiniSite\MiniSite\src\assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

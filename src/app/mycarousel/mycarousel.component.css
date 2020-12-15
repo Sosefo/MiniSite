@@ -43,11 +43,35 @@ img{
   display: flex;
 }
 
+::ng-deep .carousel-control {
+  opacity: 1;
+}
+
+::ng-deep .carousel-control-next-icon {
+  background-image: url("../../assets/right-chevron.svg");
+}
+
+::ng-deep .carousel-control-prev-icon {
+  background-image: url("../../assets/chevron-pointing-to-the-left.svg");
+}
+
 ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
 
   background-color: #8b0ead;
   width: 30px;
   height: 30px;
+}
+
+::ng-deep .carousel-control-next-icon:hover, ::ng-deep .carousel-control-prev-icon:hover{
+  background-color: #ffffff;
+}
+
+::ng-deep .carousel-control-next-icon:hover {
+  background-image: url("../../assets/right-chevron-hover.svg");
+}
+
+::ng-deep .carousel-control-prev-icon:hover {
+  background-image: url("../../assets/chevron-pointing-to-the-left-hover.svg");
 }
 
 ::ng-deep .carousel-control-prev{
@@ -60,6 +84,7 @@ img{
 }
 
 .carousel-indicators {
+  align-items: center;
   position: relative;
   margin : 0;
 }
@@ -67,6 +92,10 @@ img{
 .carousel-indicators li{
   height: 4px;
   background-color: #8b0ead;
+}
+
+.active {
+  padding:  1.5px 0;
 }
 
 ::ng-deep .carousel {
