@@ -12,7 +12,7 @@ export class AcceuilComponent implements OnInit {
   constructor(private titleService:Title) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Acceuil");
+    this.titleService.setTitle("Page d'acceuil |" + AppComponent.docTitle);
   }
 
 }

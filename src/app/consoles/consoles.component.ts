@@ -32,7 +32,7 @@ export class ConsolesComponent implements OnInit {
   carousel2Labels = ['Section transcription de chat (PS5)' , 'Indicateur tactiles des ports (Xbox Series X/S)'];
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Accessibilité dans les consoles");
+    this.titleService.setTitle( "Accessibilité dans les consoles | " + AppComponent.docTitle);
     this.displayedNavBar = false;
   }
 

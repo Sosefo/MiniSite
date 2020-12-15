@@ -12,7 +12,7 @@ export class RessourcesComponent implements OnInit {
   constructor(private titleService:Title) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Recommandations d'accessibilités");
+    this.titleService.setTitle("Recommandations d'accessibilités | " + AppComponent.docTitle);
   }
 
 }

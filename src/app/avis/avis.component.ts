@@ -26,7 +26,7 @@ export class AvisComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle(AppComponent.docTitle + "Donnez nous notre avis !");
+    this.titleService.setTitle("Donnez nous notre avis | " + AppComponent.docTitle);
     this.designNoteError = false;
     this.accessibilityNoteError = false;
   }

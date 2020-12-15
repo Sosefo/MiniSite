@@ -21,19 +21,19 @@ export class TypeRecommandationComponent implements OnInit {
     });
 
     if(this.typeRecommandation =="Général"){
-      this.titleService.setTitle(AppComponent.docTitle + "Recommandations d'accessibilités générales");
+      this.titleService.setTitle("Recommandations d'accessibilités générales | " + AppComponent.docTitle );
     }
     else if(this.typeRecommandation =="Moteur"){
-      this.titleService.setTitle(AppComponent.docTitle + "Recommandations d'accessibilités moteurs");
+      this.titleService.setTitle("Recommandations d'accessibilités moteurs | "+AppComponent.docTitle);
     }
     else if(this.typeRecommandation =="Cognitive"){
-      this.titleService.setTitle(AppComponent.docTitle + "Recommandations d'accessibilités cognitives");
+      this.titleService.setTitle( "Recommandations d'accessibilités cognitives | " + AppComponent.docTitle);
     }
     else if(this.typeRecommandation =="Vision"){
-      this.titleService.setTitle(AppComponent.docTitle + "Recommandations d'accessibilités visuelles");
+      this.titleService.setTitle( "Recommandations d'accessibilités visuelles | " + AppComponent.docTitle);
     }
     else{
-      this.titleService.setTitle(AppComponent.docTitle + "Recommandations d'accessibilités auditives");
+      this.titleService.setTitle("Recommandations d'accessibilités auditives | " + AppComponent.docTitle);
     }
   }
 

@@ -35,7 +35,7 @@ export class PeripheriquesComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Accessibilité dans les périphériques");
+    this.titleService.setTitle("Accessibilité dans les périphériques | " + AppComponent.docTitle);
     this.route.queryParams.subscribe(params => {
       if (params.peripherique !== undefined) {
         console.log(params);
