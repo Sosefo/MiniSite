@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+.active{
+  border-bottom: 2px solid white;
+}
+
 @media all and (max-width: 26.3rem) {
   img {
     width: 100%;
