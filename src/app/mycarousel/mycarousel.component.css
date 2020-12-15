@@ -48,11 +48,11 @@ img{
 }
 
 ::ng-deep .carousel-control-next-icon {
-  background-image: url("../../assets/right-chevron.svg");
+  background-image: url("/assets/right-chevron.svg");
 }
 
 ::ng-deep .carousel-control-prev-icon {
-  background-image: url("../../assets/chevron-pointing-to-the-left.svg");
+  background-image: url("/assets/chevron-pointing-to-the-left.svg");
 }
 
 ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon{
@@ -67,11 +67,11 @@ img{
 }
 
 ::ng-deep .carousel-control-next-icon:hover {
-  background-image: url("../../assets/right-chevron-hover.svg");
+  background-image: url("/assets/right-chevron-hover.svg");
 }
 
 ::ng-deep .carousel-control-prev-icon:hover {
-  background-image: url("../../assets/chevron-pointing-to-the-left-hover.svg");
+  background-image: url("/assets/chevron-pointing-to-the-left-hover.svg");
 }
 
 ::ng-deep .carousel-control-prev{
