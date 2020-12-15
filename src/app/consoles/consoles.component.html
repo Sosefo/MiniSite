@@ -2,14 +2,14 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <a mat-button class="nav-button" (click)="consoleChange(1)">
+        <a mat-button class="nav-button" (click)="consoleChange(1)" [attr.aria-current]="activeConsole == 1 ? 'page' : false">
           <span *ngIf="activeConsole!=1">Débuts de l'accessibilité<br/> dans les consoles</span>
           <strong *ngIf="activeConsole==1" class="active">Débuts de l'accessibilité<br/> dans les consoles</strong>
         </a>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="consoleChange(2)">
+        <a mat-button class="nav-button" (click)="consoleChange(2)" [attr.aria-current]="activeConsole == 2 ? 'page' : false">
           <span *ngIf="activeConsole!=2">L'accessibilité dans<br/> la next-gen</span>
           <strong *ngIf="activeConsole==2" class="active">L'accessibilité dans<br/> la next-gen</strong>
         </a>
