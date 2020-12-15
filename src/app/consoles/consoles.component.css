@@ -4,6 +4,9 @@
   height: 100%;
 }
 
+.active{
+  border-bottom: 2px solid white;
+}
 
 @media all and (max-width: 62rem) {
   .sous-navigation {

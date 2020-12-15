@@ -2,23 +2,38 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(1)">Paramétrage des touches</a>
+        <a mat-button class="nav-button" (click)="jeuChange(1)">
+          <span *ngIf="activeJeu!=1">Paramétrage des touches</span>
+          <strong *ngIf="activeJeu==1" class="active">Paramétrage des touches</strong>
+        </a>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(2)">Difficulté</a>
+        <a mat-button class="nav-button" (click)="jeuChange(2)">
+          <span *ngIf="activeJeu!=2">Difficulté</span>
+          <strong *ngIf="activeJeu==2" class="active">Difficulté</strong>
+        </a>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(3)">Paramètres visuels</a>
+        <a mat-button class="nav-button" (click)="jeuChange(3)">
+          <span *ngIf="activeJeu!=3">Paramètres visuels</span>
+          <strong *ngIf="activeJeu==3" class="active">Paramètres visuels</strong>
+        </a>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(4)">Paramètres audios</a>
+        <a mat-button class="nav-button" (click)="jeuChange(4)">
+          <span *ngIf="activeJeu!=4">Paramètres audios</span>
+          <strong *ngIf="activeJeu==4" class="active">Paramètres audios</strong>
+        </a>
       </li>
       <mat-divider></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(5)">Assistance</a>
+        <a mat-button class="nav-button" (click)="jeuChange(5)">
+          <span *ngIf="activeJeu!=5">Assistance</span>
+          <strong *ngIf="activeJeu==5" class="active">Assistance</strong>
+        </a>
       </li>
     </ul>
   </div>

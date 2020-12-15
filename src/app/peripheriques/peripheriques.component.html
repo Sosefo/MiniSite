@@ -3,19 +3,32 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <a mat-button class="nav-button" (click)="peripheriqueChange(1);">Manette Ps4 pour un usage <br/> à une seule main</a>
+        <a mat-button class="nav-button" (click)="peripheriqueChange(1);">
+          <span *ngIf="activePeripherique!=1">Manette Ps4 pour un usage <br/> à une seule main</span>
+          <strong *ngIf="activePeripherique==1" class="active">Manette Ps4 pour un usage <br/> à une seule main</strong>
+        </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="peripheriqueChange(2);">Xbox adaptive controller</a>
+        <a mat-button class="nav-button" (click)="peripheriqueChange(2);">
+          <span *ngIf="activePeripherique!=2">Xbox adaptive controller</span>
+          <strong *ngIf="activePeripherique==2" class="active">Xbox adaptive controller</strong>
+        </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="peripheriqueChange(3);">Adaptive Gaming Kit</a>
+        <a mat-button class="nav-button" (click)="peripheriqueChange(3);">
+          <span *ngIf="activePeripherique!=3">Adaptive Gaming Kit</span>
+          <strong *ngIf="activePeripherique==3" class="active">Adaptive Gaming Kit</strong>
+
+        </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="peripheriqueChange(4);">Handi Joystick</a>
+        <a mat-button class="nav-button" (click)="peripheriqueChange(4);">
+          <span *ngIf="activePeripherique!=4">Handi Joystick</span>
+          <strong *ngIf="activePeripherique==4" class="active">Handi Joystick</strong>
+        </a>
       </li>
     </ul>
   </div>
