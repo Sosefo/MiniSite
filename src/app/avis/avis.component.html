@@ -18,7 +18,7 @@
             <label class="label" [for]="value">{{value}}</label>
           </mat-radio-button>
         </mat-radio-group>
-        <p *ngIf="designNoteError" [class.errors]="accessibilityNote == undefined" id="design-error">Veuillez renseigner une note pour le design du site</p>
+        <p *ngIf="designNoteError" [class.errors]="designNote == undefined" id="design-error">Veuillez renseigner une note pour le design du site</p>
 
         <label id="accessibilite" class="col-sm-8 champ-title">Note de l'accessibilité du site <br class="mobile-line-break"/>(entre 0 et 5) *</label>
         <mat-radio-group
