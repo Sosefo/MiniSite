@@ -154,3 +154,7 @@ mat-panel-title {
   flex-grow: unset;
   margin: auto;
 }
+
+mat-expansion-panel-header:focus {
+  outline: auto;
+}
