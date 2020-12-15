@@ -12,7 +12,7 @@ export class SourcesComponent implements OnInit {
   constructor(private titleService:Title) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Sources utilisées");
+    this.titleService.setTitle("Sources utilisées | " + AppComponent.docTitle);
   }
 
 }

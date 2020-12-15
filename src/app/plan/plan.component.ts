@@ -12,7 +12,7 @@ export class PlanComponent implements OnInit {
   constructor(private titleService:Title) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Plan du site");
+    this.titleService.setTitle( "Plan du site | " + AppComponent.docTitle);
   }
 
 }

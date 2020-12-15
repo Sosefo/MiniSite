@@ -7,7 +7,6 @@
         <mat-radio-group
           aria-describedby="design-error"
           aria-labelledby="design"
-          aria-required="true"
           [attr.aria-invalid]="design == undefined"
           required
           name="design"
@@ -15,7 +14,7 @@
           class="radio"
           [(ngModel)]="designNote"
           (ngModelChange)="designUpdate()">
-          <mat-radio-button *ngFor="let value of values" [id]="value"  [value]="value" [tabindex]="value">
+          <mat-radio-button role="radio" *ngFor="let value of values" [id]="value"  [value]="value" [tabindex]="value">
             <label class="label" [for]="value">{{value}}</label>
           </mat-radio-button>
         </mat-radio-group>
@@ -24,8 +23,7 @@
         <label id="accessibilite" class="col-sm-8 champ-title">Note de l'accessibilité du site <br class="mobile-line-break"/>(entre 0 et 5) *</label>
         <mat-radio-group
           aria-describedby="accessibility-error"
-          aria-labelledby="accessibilité"
-          aria-required="true"
+          aria-labelledby="accessibilite"
           [attr.aria-invalid]="accessibility == undefined"
           required
           #accessibility="ngModel"

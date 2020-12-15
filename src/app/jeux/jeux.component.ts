@@ -30,7 +30,7 @@ export class JeuxComponent implements OnInit {
   transcriptionPanelOpen = false;
 
   ngOnInit(): void {
-    this.titleService.setTitle(AppComponent.docTitle + "Accessibilité dans les jeux");
+    this.titleService.setTitle("Accessibilité dans les jeux | " +AppComponent.docTitle);
     this.route.queryParams.subscribe(params => {
       if (params.jeu !== undefined) {
         this.activeJeu = params.jeu;
