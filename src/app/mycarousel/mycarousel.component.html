@@ -1,4 +1,4 @@
-<carousel #carousel id="peripheriquesSlide1" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" aria-label="Vues de la manette à usage d'une seul main">
+<carousel #carousel id="peripheriquesSlide1" [interval]="4500" [isAnimated]="true" [(activeSlide)]="activeSlide" [showIndicators]="false" aria-roledescription="carousel" [attr.aria-label]="labelCarousel">
   <slide *ngFor="let imageSrc of imagesSrc;let i=index;" role="tabpanel" id="{{'panneau-' + i}}"
     aria-hidden="!activeSlide === i" aria-roledescription="slide" [attr.aria-label]="i + ' of ' + imagesSrc.length">
     <img class="d-block w-100" [attr.src]="imageSrc" [attr.alt]="imagesText[i]"/>
