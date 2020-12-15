@@ -3,13 +3,21 @@
   height: 100%;
 }
 
-a{
+.card-link{
   border : 1px solid #a338c4;
   color : #a338c4;
   border-radius: 15px;
   padding : 5px 20px;
   font-weight: bold;
   transition: 0.3s;
+}
+
+.title-link{
+  color : black;
+}
+
+.title-link:hover{
+  text-decoration: none;
 }
 
 @media all and (max-width: 62rem) {
@@ -36,7 +44,7 @@ h1 {
   margin-right: 20px;
 }
 
-a:hover{
+.card-link:hover{
   background-color:#a338c4;
   color : white;
 }

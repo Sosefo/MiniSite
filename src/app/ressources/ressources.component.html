@@ -19,50 +19,60 @@
 <section class="container-fluid content">
   <div class="card" style="width: 22rem;">
     <div class="card-body">
-      <h2 class="card-title">Général</h2>
+      <h2 class="card-title">
+        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Général' }" class="title-link">Général</a>
+      </h2>
       <p class="card-text">Recommandations générales sur les jeux/consoles</p>
       <div class="link-container">
-        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Général' }" class="card-link">En savoir plus</a>
+        <a [routerLink]="['type-recommandation']" aria-label="Consulter : Recommandations générales" [queryParams]="{ type: 'Général' }" class="card-link">Consulter</a>
       </div>
     </div>
   </div>
 
   <div class="card" style="width: 22rem;">
     <div class="card-body">
-      <h2 class="card-title">Moteur</h2>
+      <h2 class="card-title">
+        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Moteur' }" class="title-link">Moteur</a>
+      </h2>
       <p class="card-text">Recommandations liées aux contrôles des périphériques ainsi que la mobilité</p>
       <div class="link-container">
-        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Moteur' }" class="card-link">En savoir plus</a>
+        <a [routerLink]="['type-recommandation']" aria-label="Consulter : Recommandations motrices" [queryParams]="{ type: 'Moteur' }" class="card-link">Consulter</a>
       </div>
     </div>
   </div>
 
   <div class="card" style="width: 22rem;">
     <div class="card-body">
-      <h2 class="card-title">Cognitive</h2>
+      <h2 class="card-title">
+        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Cognitive' }" class="title-link">Cognitive</a>
+      </h2>
       <p class="card-text">Recommandations liées à la mémoire et au traitement des informations</p>
       <div class="link-container">
-        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Cognitive' }" class="card-link">En savoir plus</a>
+        <a [routerLink]="['type-recommandation']" aria-label="Consulter : Recommandations cognitives" [queryParams]="{ type: 'Cognitive' }" class="card-link">Consulter</a>
       </div>
     </div>
   </div>
 
   <div class="card" style="width: 22rem;">
     <div class="card-body">
-      <h2 class="card-title">Vision</h2>
+      <h2 class="card-title">
+        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Vision' }" class="title-link">Vision</a>
+      </h2>
       <p class="card-text">Recommandations liés à l'affichage</p>
       <div class="link-container">
-        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Vision' }" class="card-link">En savoir plus</a>
+        <a [routerLink]="['type-recommandation']" aria-label="Consulter : Recommandations visuelles" [queryParams]="{ type: 'Vision' }" class="card-link">Consulter</a>
       </div>
     </div>
   </div>
 
   <div class="card" style="width: 22rem;">
     <div class="card-body">
-      <h2 class="card-title">Son</h2>
+      <h2 class="card-title">
+        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Son' }" class="title-link">Son</a>
+      </h2>
       <p class="card-text">Recommandations liés aux conversations dans un jeu et aux sous-titres</p>
       <div class="link-container">
-        <a [routerLink]="['type-recommandation']" [queryParams]="{ type: 'Son' }" class="card-link">En savoir plus</a>
+        <a [routerLink]="['type-recommandation']" aria-label="Consulter : Recommandations auditives" [queryParams]="{ type: 'Son' }" class="card-link">Consulter</a>
       </div>
     </div>
   </div>
