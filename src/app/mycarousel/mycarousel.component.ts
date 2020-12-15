@@ -10,6 +10,7 @@ import { CarouselComponent } from 'ngx-bootstrap/carousel';
 export class MycarouselComponent implements OnInit,AfterViewInit {
 
 
+  @Input()labelCarousel : string;
   @Input()
   labels: string[];
 
@@ -47,7 +48,6 @@ export class MycarouselComponent implements OnInit,AfterViewInit {
       this.playPauseIcon._elementRef.nativeElement.innerHTML = 'play_arrow';
       this.carousel.interval = 0;
       this.isStoped = true;
-      console.log(this.carousel);
 
     }
     else{
@@ -55,7 +55,6 @@ export class MycarouselComponent implements OnInit,AfterViewInit {
       this.playPauseIcon._elementRef.nativeElement.innerHTML = 'pause';
       this.isStoped = false;
       this.carousel.interval = 4500;
-      console.log(this.isStoped);
     }
 
   }

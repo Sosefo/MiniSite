@@ -3,15 +3,15 @@
     <ul class="navigation-list">
       <li>
         <a mat-button class="nav-button" (click)="consoleChange(1)">
-          <span *ngIf="activeConsole!=1">Débuts de l'accessibilité<br/> dans les consoles</span>
-          <strong *ngIf="activeConsole==1" class="active">Débuts de l'accessibilité<br/> dans les consoles</strong>
+          <span *ngIf="activeConsole!=1">Débuts de l'accessibilité<br aria-hidden="true"/> dans les consoles</span>
+          <strong *ngIf="activeConsole==1" class="active">Débuts de l'accessibilité<br aria-hidden="true"/> dans les consoles</strong>
         </a>
       </li>
-      <mat-divider></mat-divider>
+      <mat-divider aria-hidden="true"></mat-divider>
       <li>
         <a mat-button class="nav-button" (click)="consoleChange(2)">
-          <span *ngIf="activeConsole!=2">L'accessibilité dans<br/> la next-gen</span>
-          <strong *ngIf="activeConsole==2" class="active">L'accessibilité dans<br/> la next-gen</strong>
+          <span *ngIf="activeConsole!=2">L'accessibilité dans<br aria-hidden="true"/> la next-gen</span>
+          <strong *ngIf="activeConsole==2" class="active">L'accessibilité dans<br aria-hidden="true"/> la <span lang="en">next</span>-gen</strong>
         </a>
       </li>
     </ul>

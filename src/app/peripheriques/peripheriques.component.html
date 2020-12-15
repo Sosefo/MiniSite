@@ -1,11 +1,11 @@
-<nav #navbarPeripheriques  class="sous-navigation" role="navigation" aria-label="Periphériques filtres">
+<nav #navbarPeripheriques  class="sous-navigation" role="navigation" aria-label="Périphériques filtres">
 
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
         <a mat-button class="nav-button" (click)="peripheriqueChange(1);">
-          <span *ngIf="activePeripherique!=1">Manette Ps4 pour un usage <br/> à une seule main</span>
-          <strong *ngIf="activePeripherique==1" class="active">Manette Ps4 pour un usage <br/> à une seule main</strong>
+          <span *ngIf="activePeripherique!=1">Manette Ps4 pour un usage <br aria-hidden="true"/> à une seule main</span>
+          <strong *ngIf="activePeripherique==1" class="active">Manette Ps4 pour un usage <br aria-hidden="true"/> à une seule main</strong>
         </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
