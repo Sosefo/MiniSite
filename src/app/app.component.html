@@ -21,37 +21,37 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-list">
         <li>
-          <a class="nav-link" #rlaAccueil="routerLinkActive" routerLinkActive="active" aria-label="Page d'accueil" routerLink="/accueil">
+          <a class="nav-link" #rlaAccueil="routerLinkActive" routerLinkActive="active" aria-label="Page d'accueil" [attr.aria-current]="rlaAccueil.isActive ? 'page' : false" routerLink="/accueil">
             <strong *ngIf="rlaAccueil.isActive">Accueil</strong>
             <span *ngIf="!rlaAccueil.isActive">Accueil</span>
         </a>
       </li>
       <li>
-        <a class="nav-link" #rlaPeriph="routerLinkActive" routerLinkActive="active"  aria-label="Accessibilité des périphériques" routerLink="/peripheriques">
+        <a class="nav-link" #rlaPeriph="routerLinkActive" routerLinkActive="active"  aria-label="Accessibilité des périphériques"[attr.aria-current]="rlaPeriph.isActive"  routerLink="/peripheriques">
           <strong *ngIf="rlaPeriph.isActive">Périphériques</strong>
           <span *ngIf="!rlaPeriph.isActive">Périphériques</span>
         </a>
       </li>
       <li>
-        <a class="nav-link" #rlaConsoles="routerLinkActive" routerLinkActive="active" aria-label="Accessibilité dans les consoles"  routerLink="/consoles">
+        <a class="nav-link" #rlaConsoles="routerLinkActive" routerLinkActive="active" aria-label="Accessibilité dans les consoles"[attr.aria-current]="rlaConsoles.isActive"   routerLink="/consoles">
           <strong *ngIf="rlaConsoles.isActive">Consoles</strong>
           <span *ngIf="!rlaConsoles.isActive">Consoles</span>
         </a>
       </li>
       <li>
-        <a class="nav-link" #rlaJeux="routerLinkActive" routerLinkActive="active" aria-label="Accessibilité dans les jeux" routerLink="/jeux">
+        <a class="nav-link" #rlaJeux="routerLinkActive" routerLinkActive="active" aria-label="Accessibilité dans les jeux"[attr.aria-current]="rlaJeux.isActive"  routerLink="/jeux">
           <strong *ngIf="rlaJeux.isActive">Jeux</strong>
           <span *ngIf="!rlaJeux.isActive">Jeux</span>
         </a>
       </li>
       <li>
-        <a class="nav-link" #rlaR="routerLinkActive" routerLinkActive="active" aria-label="Recommandations d'accessiblité pour les jeux vidéos" routerLink="/recommandations">
+        <a class="nav-link" #rlaR="routerLinkActive" routerLinkActive="active" aria-label="Recommandations d'accessiblité pour les jeux vidéos"[attr.aria-current]="rlaR.isActive"  routerLink="/recommandations">
           <strong *ngIf="rlaR.isActive">Recommandations</strong>
           <span *ngIf="!rlaR.isActive">Recommandations</span>
         </a>
       </li>
       <li>
-        <a class="nav-link" #rlaAvis="routerLinkActive" routerLinkActive="active" routerLink="/avis">
+        <a class="nav-link" #rlaAvis="routerLinkActive" routerLinkActive="active"[attr.aria-current]="rlaAvis.isActive ? 'page' : false"  routerLink="/avis">
           <strong *ngIf="rlaAvis.isActive">Donnez nous votre avis !</strong>
           <span *ngIf="!rlaAvis.isActive">Donnez nous votre avis !</span>
         </a>

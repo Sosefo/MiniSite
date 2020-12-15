@@ -2,35 +2,35 @@
   <div class="nav-content">
     <ul class="navigation-list">
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(1)">
+        <a mat-button class="nav-button" (click)="jeuChange(1)" [attr.aria-current]="activeJeu == 1 ? 'page' : false">
           <span *ngIf="activeJeu!=1">Paramétrage des touches</span>
           <strong *ngIf="activeJeu==1" class="active">Paramétrage des touches</strong>
         </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(2)">
+        <a mat-button class="nav-button" (click)="jeuChange(2)" [attr.aria-current]="activeJeu == 2 ? 'page' : false">
           <span *ngIf="activeJeu!=2">Difficulté</span>
           <strong *ngIf="activeJeu==2" class="active">Difficulté</strong>
         </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(3)">
+        <a mat-button class="nav-button" (click)="jeuChange(3)" [attr.aria-current]="activeJeu == 3 ? 'page' : false">
           <span *ngIf="activeJeu!=3">Paramètres visuels</span>
           <strong *ngIf="activeJeu==3" class="active">Paramètres visuels</strong>
         </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(4)">
+        <a mat-button class="nav-button" (click)="jeuChange(4)" [attr.aria-current]="activeJeu == 4 ? 'page' : false">
           <span *ngIf="activeJeu!=4">Paramètres audios</span>
           <strong *ngIf="activeJeu==4" class="active">Paramètres audios</strong>
         </a>
       </li>
       <mat-divider aria-hidden="true"></mat-divider>
       <li>
-        <a mat-button class="nav-button" (click)="jeuChange(5)">
+        <a mat-button class="nav-button" (click)="jeuChange(5)" [attr.aria-current]="activeJeu == 5 ? 'page' : false">
           <span *ngIf="activeJeu!=5">Assistance</span>
           <strong *ngIf="activeJeu==5" class="active">Assistance</strong>
         </a>
