@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9621006-fd3e-4447-8ec6-6add867bc9cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/chevron-pointing-to-the-left-hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/chevron-pointing-to-the-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/right-chevron-hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/right-chevron.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/mycarousel/mycarousel.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sources/sources.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sources/sources.component.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
