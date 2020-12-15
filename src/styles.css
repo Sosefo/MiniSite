@@ -32,9 +32,15 @@ h1 {
 }
 
 .nav-button{
-  height: 100px;
+  height: fit-content;
+  padding: 15px 0 !important;
   width: 200px;
   color: white;
+}
+
+.nav-button:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .main-text-content{
